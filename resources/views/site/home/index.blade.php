@@ -1,359 +1,824 @@
 @extends('layouts.merge.site')
 @section('titulo', 'Oficial')
 @section('content')
-    <div class="home-banner">
-        <div class="shape">
-            <img class="shape1" src="/site/images/banner/banner-2-shape1.png" alt="image">
-            <img class="shape2" src="/site/images/banner/banner-2-shape2.png" alt="image">
-        </div>
-        <div class="home-banner-slider-area owl-carousel">
-            <div class="home-banner-single-slide">
-                <div class="container-fluid container-large">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="banner-text-area banner-text-area-1">
-                                <h6>Serviços de conserto de PC e celular</h6>
-                                <h1>
-                                    Um serviço de reparo de tecnologia mais inteligente</h1>
+    <div class="stricky-header stricked-menu main-menu">
+        <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+    </div><!-- /.stricky-header -->
 
-                                <a class="default-button" href="{{ route('site.about') }}"><span>
-                                        Saber Mais<i class="flaticon-right-arrow"></i></span></a>
-                            </div>
-                        </div>
+    <!--Main Slider Start-->
+    <section class="main-slider">
+        <div class="swiper-container thm-swiper__slider"
+            data-swiper-options='{"slidesPerView": 1, "loop": true,
+        "effect": "fade",
+        "pagination": {
+        "el": "#main-slider-pagination",
+        "type": "bullets",
+        "clickable": true
+        },
+        "navigation": {
+        "nextEl": "#main-slider__swiper-button-next",
+        "prevEl": "#main-slider__swiper-button-prev"
+        },
+        "autoplay": {
+        "delay": 5000
+        }}'>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="image-layer" style="background-image: url(/site/assets/images/backgrounds/main-slider-1-1.jpg);">
                     </div>
-                </div>
-            </div>
-            <div class="home-banner-single-slide hbs-2">
-                <div class="container-fluid container-large">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="banner-text-area banner-text-area-1">
-                                <h6>
-                                    Serviços de conserto de PC e celular</h6>
-                                <h1>Os melhores serviços de TI em toda a cidade</h1>
-
-                                <a class="default-button" href="{{ route('site.about') }}"><span>
-                                        Saber Mais<i class="flaticon-right-arrow"></i></span></a>
-                            </div>
-                        </div>
+                    <!-- /.image-layer -->
+                    <div class="main-slider__shape-1">
+                        <img src="/site/assets/images/shapes/main-slider-shape-1.png" alt="">
                     </div>
-                </div>
-            </div>
-            <div class="home-banner-single-slide hbs-3">
-                <div class="container-fluid container-large">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="banner-text-area banner-text-area-1">
-                                <h6>
-                                    Serviços de conserto de PC e celular</h6>
-                                <h1>Repare suas máquinas com especialistas.</h1>
-
-                                <a class="default-button" href="{{ route('site.about') }}"><span>
-                                        Saber Mais<i class="flaticon-right-arrow"></i></span></a>
-                            </div>
-                        </div>
+                    <div class="main-slider__shape-2">
+                        <img src="/site/assets/images/shapes/main-slider-shape-2.png" alt="">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="features pt-70 pb-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="features-card-2">
-                        <div class="features-card-header">
-                            <span>01</span>
-                            <h4>
-                                Visão</h4>
-                        </div>
-                        <p>Tratar de cada detalhe do funcionamento da engenharia por trás de todos os nossos
-                            serviços prestados é o nosso objectivo.</p>
-                        <a class="read-more-btn" href="{{ route('site.about') }}">
-                            consulte Mais informação <i class="flaticon-right-arrow"></i></a>
+                    <div class="main-slider__shape-3">
+                        <img src="/site/assets/images/shapes/main-slider-shape-3.png" alt="">
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="features-card-2">
-                        <div class="features-card-header">
-                            <span>02</span>
-                            <h4>Nossa Missão</h4>
-                        </div>
-                        <p>É superar com excelência as necessidades dos clientes, oferecendo um serviço de confiança,
-                            rigor, transparência e precisão de forma rápida e personalizada.</p>
-                        <a class="read-more-btn" href="{{ route('site.about') }}">
-                            consulte Mais informação <i class="flaticon-right-arrow"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="features-card-2">
-                        <div class="features-card-header">
-                            <span>03</span>
-                            <h4>Objectivos</h4>
-                        </div>
-                        <p>Busca ser referência em tecnologia e automação, com excelência no serviço, foco na
-                            satisfação do cliente e expansão no mercado online. </p>
-                        <a class="read-more-btn" href="{{ route('site.about') }}">
-                            consulte Mais informação <i class="flaticon-right-arrow"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="about pb-100">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img-2">
-                        <img src="/site/images/about/about-2.png" alt="image">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-text-area about-text-area-2 pl-20">
-                        <div class="default-section-title">
-                            <span>Qualidade garantida</span>
-                            <h3>Consertamos todos os tipos de computadores e Impressoras</h3>
-                            <p>Somos a Workaholic SA, especialistas em tecnologia, telecomunicações e automação. Cuide da
-                                produtividade do seu negócio com segurança e eficiência.
-                            <ol>
-                                <li>Consertamos computadores e impressoras.</li>
-                                @if(1==0)
-
-
-                                <li>Equipe altamente qualificada e experiente.</li>
-                                <li>Soluções personalizadas para suas necessidades.</li>
-                                <li>Agilidade e compromisso com a excelência.</li>
-                                <li>Expansão contínua para melhor atendê-lo.</li>
-                                @endif
-                            </ol><br>Escolha a Workaholic SA e experimente a mais alta qualidade em serviços. Entre em
-                            contato agora e eleve sua produtividade para um novo nível!
-                            </p>
-
-                        </div>
-                        <a class="default-button default-button-2 mt-30" href="{{ route('site.about') }}"><span>Sobre a
-                                nossa empresa <i class="flaticon-right-arrow"></i></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="service ptb-100 bg-f9f9f9">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>Nossos serviços</span>
-                <h3>Nossos serviços</h3>
-            </div>
-            <div class="section-content">
-                <div class="service-slider-area-2 owl-carousel">
-                    @foreach ($services as $item)
-                        <div class="service-card-2">
-                            <div class="service-card-img-2">
-                                <a href="{!! url('/servicos/' . urlencode($item->name)) !!}"><img src="/storage/{{ $item->photo }}"
-                                        alt="image"></a>
-                            </div>
-                            <div class="service-card-text-2">
-                                <div class="service-card-text-header">
-                                    <i class="flaticon-mechanics"></i>
-                                    <h4><a href="{!! url('/servicos/' . urlencode($item->name)) !!}">
-                                            {{ $item->name }}</a></h4>
-                                </div>
-
-                                <a class="read-more-btn" href="{!! url('/servicos/' . urlencode($item->name)) !!}">
-                                    consulte Mais informação <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    @endforeach
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="working-process ptb-100">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>
-                    Nosso processo de reparo</span>
-                <h3>Quem somos e como trabalhamos</h3>
-            </div>
-            <div class="section-content">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                        <div class="working-process-card-2">
-                            <span>1 </span>
-                            <div class="working-process-title-2">
-                                <img src="/site/images/icons/setting.png" alt="image">
-
-                            </div>
-                            <p>Realizar uma avaliação completa do equipamento ou sistema para identificar o problema
-                                específico e suas causas. </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                        <div class="working-process-card-2">
-                            <span>2 </span>
-                            <div class="working-process-title-2">
-                                <img src="/site/images/icons/web-maintenance.png" alt="image">
-
-                            </div>
-                            <p>Realizar as devidas correções, trocas de peças defeituosas, configurações ou ajustes
-                                necessários para restaurar o funcionamento adequado. </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                        <div class="working-process-card-2">
-                            <span>3 </span>
-                            <div class="working-process-title-2">
-                                <img src="/site/images/icons/certificate.png" alt="image">
-
-                            </div>
-                            <p>Após o reparo, realizar testes para verificar o funcionamento adequado e configurar o
-                                equipamento ou sistema para garantir seu desempenho otimizado..</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="ff-intro ff-intro-1">
-        <div class="container">
-            <div class="intro-video-area ptb-100">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
-                        <div class="intro-video-text-area">
-                            <div class="default-section-title color-title">
-                                <h3>
-                                    Cuidado rápido e excelente para seus computadores</h3>
-                            </div>
-                            <a class="default-button mt-30" href="{{ route('site.contact') }}"><span>
-                                    Contate-nos <i class="flaticon-right-arrow"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 col-12">
-                        <div class="intro-video-play-area pt-30">
-                            <a class="video-popup"
-                                href="{{ $configuration->youtube }}"> <i
-                                    class="fas fa-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fun-fact-area">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="fun-fact-card">
-                            <i class="flaticon-success"></i>
-                            <h2><span class="odometer" data-count="125">00</span>+</h2>
-                            <p>
-                                Equipamentos Reparados</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="fun-fact-card">
-                            <i class="flaticon-experience"></i>
-                            <h2><span class="odometer" data-count="200">00</span>+</h2>
-                            <p>
-Cliente Feliz</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="fun-fact-card">
-                            <i class="flaticon-expert"></i>
-                            <h2><span class="odometer" data-count="{{ count($agentes) }}">00</span>+</h2>
-                            <p>
-                                Equipe Especialistas</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="team bg-f9f9f9 ptb-100">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>Especialistas em Reparos</span>
-                <h3>Conheça os membros da nossa equipe de especialistas</h3>
-            </div>
-            <div class="section-content">
-                <div class="team-slider-area-2 owl-carousel">
-                    @foreach ($agentes as $item)
-                        <div class="team-card-2">
-                            <div class="team-card-img">
-                                <img src="/storage/{{ $item->foto }}" alt="image">
-                            </div>
-                            <div class="team-card-text-2">
-                                <div class="team-card-text-intro">
-                                    <h4>{{ $item->name }}</h4>
-                                    <p>{{ $item->specification }}</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    @endforeach
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-    <div class="blog ptb-100 bg-f9f9f9">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>
-                    Notícias Recentes</span>
-                <h3>
-                    Deve ler a postagem do blog</h3>
-            </div>
-            <div class="section-content">
-                <div class="row justify-content-center">
-
-                    @foreach ($news as $item)
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="blog-card blog-card-2">
-                                <div class="blog-card-img">
-                                    <a href="{!! url('/noticia/' . urlencode($item->title)) !!}"><img src="/storage/{{ $item->path }}"
-                                            alt="image"></a>
-                                </div>
-                                <div class="blog-card-text">
-                                    <span class="blog-date"><i class="flaticon-deadline"></i>
-                                        {{ date('d-m-Y', strtotime($item->date)) }}</span>
-                                    <h4><a href="{!! url('/noticia/' . urlencode($item->title)) !!}">{!! mb_substr($item->title, 0, 48, 'UTF-8') !!}</a>
-                                    </h4>
-                                    <a class="read-more-btn" href="{!! url('/noticia/' . urlencode($item->title)) !!}">
-                                        consulte Mais informação <i class="flaticon-right-arrow"></i></a>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider__content">
+                                    <p>It Software Solution &</p>
+                                    <h2>technology</h2>
+                                    <div class="main-slider__btn-video-box">
+                                        <div class="main-slider__btn-box">
+                                            <a href="about.html" class="thm-btn main-slider__btn">Descubra mais</a>
+                                        </div>
+                                        <div class="main-slider__video-link">
+                                            <a href="https://www.youtube.com/Assistir?v=Get7rqXYrbQ" class="video-popup">
+                                                <div class="main-slider__video-icon">
+                                                    <span class="fa fa-play"></span>
+                                                    <i class="ripple"></i>
+                                                </div>
+                                            </a>
+                                            <h3 class="main-slider__video-text">Assistir <br> como funciona</h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    </div>
+                </div>
 
+                <div class="swiper-slide">
+                    <div class="image-layer" style="background-image: url(/site/assets/images/backgrounds/main-slider-1-2.jpg);">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="main-slider__shape-1">
+                        <img src="/site/assets/images/shapes/main-slider-shape-1.png" alt="">
+                    </div>
+                    <div class="main-slider__shape-2">
+                        <img src="/site/assets/images/shapes/main-slider-shape-2.png" alt="">
+                    </div>
+                    <div class="main-slider__shape-3">
+                        <img src="/site/assets/images/shapes/main-slider-shape-3.png" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider__content">
+                                    <p>It Software Solution &</p>
+                                    <h2>technology</h2>
+                                    <div class="main-slider__btn-video-box">
+                                        <div class="main-slider__btn-box">
+                                            <a href="about.html" class="thm-btn main-slider__btn">Descubra mais</a>
+                                        </div>
+                                        <div class="main-slider__video-link">
+                                            <a href="https://www.youtube.com/Assistir?v=Get7rqXYrbQ" class="video-popup">
+                                                <div class="main-slider__video-icon">
+                                                    <span class="fa fa-play"></span>
+                                                    <i class="ripple"></i>
+                                                </div>
+                                            </a>
+                                            <h3 class="main-slider__video-text">Assistir <br> como funciona</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="swiper-slide">
+                    <div class="image-layer" style="background-image: url(/site/assets/images/backgrounds/main-slider-1-3.jpg);">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="main-slider__shape-1">
+                        <img src="/site/assets/images/shapes/main-slider-shape-1.png" alt="">
+                    </div>
+                    <div class="main-slider__shape-2">
+                        <img src="/site/assets/images/shapes/main-slider-shape-2.png" alt="">
+                    </div>
+                    <div class="main-slider__shape-3">
+                        <img src="/site/assets/images/shapes/main-slider-shape-3.png" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider__content">
+                                    <p>Solução de software de TI &</p>
+                                    <h2>tecnologia</h2>
+                                    <div class="main-slider__btn-video-box">
+                                        <div class="main-slider__btn-box">
+                                            <a href="about.html" class="thm-btn main-slider__btn">Descubra mais</a>
+                                        </div>
+                                        <div class="main-slider__video-link">
+                                            <a href="https://www.youtube.com/Assistir?v=Get7rqXYrbQ" class="video-popup">
+                                                <div class="main-slider__video-icon">
+                                                    <span class="fa fa-play"></span>
+                                                    <i class="ripple"></i>
+                                                </div>
+                                            </a>
+                                            <h3 class="main-slider__video-text">Assistir <br> como funciona</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-pagination" id="main-slider-pagination"></div>
+
+        </div>
+    </section>
+    <!--Main Slider End-->
+
+    <!--Get Solutions Start-->
+    <section class="get-solutions">
+        <div class="container">
+            <div class="get-solutions__inner">
+                <p class="get-solutions__text">Pare de desperdiçar tempo e dinheiro com tecnologia. <a href="about.html">Explorar
+                    notech</a> e obtenha as melhores soluções.</p>
+            </div>
+        </div>
+    </section>
+    <!--Get Solutions End-->
+
+    <!--Feature One Start-->
+    <section class="feature-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                    <!--Feature One Single-->
+                    <div class="feature-one__single">
+                        <div class="feature-one__img">
+                            <img src="/site/assets/images/resources/feature-1-1.jpg" alt="">
+                            <div class="feature-one__title-box">
+                                <h3 class="feature-one__title"><a href="about.html">Gerenciar serviços de TI</a></h3>
+                            </div>
+                            <div class="feature-one__hover-content">
+                                <div class="feature-one__icon">
+                                    <span class="icon-system"></span>
+                                </div>
+                                <h3 class="feature-one__hover-title"><a href="about.html">Gerenciar serviços de TI</a>
+                                </h3>
+                                <p class="feature-one__hover-text">Existem muitos lipsum de sábios de passagem de
+                                    disponíveis alguns.</p>
+                                <div class="feature-one__learn-more">
+                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                    <!--Feature One Single-->
+                    <div class="feature-one__single">
+                        <div class="feature-one__img">
+                            <img src="/site/assets/images/resources/feature-1-2.jpg" alt="">
+                            <div class="feature-one__title-box">
+                                <h3 class="feature-one__title"><a href="about.html">Cíber segurança</a></h3>
+                            </div>
+                            <div class="feature-one__hover-content">
+                                <div class="feature-one__icon">
+                                    <span class="icon-cyber"></span>
+                                </div>
+                                <h3 class="feature-one__hover-title"><a href="about.html">Cíber segurança</a></h3>
+                                <p class="feature-one__hover-text">Taqui estão muitos lipsum de in pass sábios de
+                                    disponíveis alguns.</p>
+                                <div class="feature-one__learn-more">
+                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                    <!--Feature One Single-->
+                    <div class="feature-one__single">
+                        <div class="feature-one__img">
+                            <img src="/site/assets/images/resources/feature-1-3.jpg" alt="">
+                            <div class="feature-one__title-box">
+                                <h3 class="feature-one__title"><a href="about.html">Digital experience</a></h3>
+                            </div>
+                            <div class="feature-one__hover-content">
+                                <div class="feature-one__icon">
+                                    <span class="icon-application"></span>
+                                </div>
+                                <h3 class="feature-one__hover-title"><a href="about.html">Digital experience</a>
+                                </h3>
+                                <p class="feature-one__hover-text">Existem muitos lipsum de sábios de passagem de
+                                    disponíveis alguns.</p>
+                                <div class="feature-one__learn-more">
+                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!--Feature One End-->
+
+    <!--Get To Know Start-->
+    <section class="get-to-know">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                        <div class="get-to-know__img-box">
+                            <div class="get-to-know__img">
+                                <img src="/site/Flyer02.png" alt="">
+                            </div>
+                            <div class="get-to-know__small-img">
+                                <img src="/site/assets/images/resources/get-to-know-small-img.jpg" alt="">
+                            </div>
+                            <div class="get-to-know__client-box">
+                                <h3 class="odometer" data-count="6860">00</h3>
+                                <span class="get-to-know__plus">+</span>
+                                <p class="get-to-know__client-text">worldwide clients</p>
+                            </div>
+                            <div class="get-to-know-shape-1"><img src="/site/d.png" 
+                                    alt="" width="300"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="get-to-know__right">
+                        <div class="section-title text-left">
+                            <div class="section-title__tagline-box">
+                                <span class="section-title__tagline">Conheça-nos</span>
+                                <div class="section-title-shape">
+                                    <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                                </div>
+                            </div>
+                            <h2 class="section-title__title">Soluções fáceis para seus problemas de TI</h2>
+                        </div>
+                        <p class="get-to-know__text">Lorem ipsum dolor sit amet, consectetur nod adipisicing elit
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn.</p>
+                        <ul class="list-unstyled get-to-know__points">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-check"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Donec scelerisque egestas purus eget fringilla</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-check"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Mauris imperdiet non ligula et lobortis.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="get-to-know__it-solutions">
+                            <div class="get-to-know__it-solutions-icon">
+                                <span class="icon-data-analytics"></span>
+                            </div>
+                            <div class="get-to-know__it-solutions-text-box">
+                                <p class="get-to-know__it-solutions-text">Pare de se preocupar, nós cuidamos dos seus
+                                    problemas de tecnologia.</p>
+                            </div>
+                        </div>
+                        <a href="about.html" class="get-to-know__btn thm-btn">Descubra mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Get To Know End-->
+
+    <!--Services One Start-->
+    <section class="services-one" style="background-image: url(/site/assets/images/shapes/service-bg-1-1.png);">
+        <div class="service-one__shape-1"></div><!-- /.service-one__shape-1 -->
+        <div class="service-one__shape-2"></div><!-- /.service-one__shape-2 -->
+        <div class="container">
+            <div class="services-one__top">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="services-one__top-left">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <span class="section-title__tagline">O que estamos oferecendo</span>
+                                    <div class="section-title-shape">
+                                        <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                                    </div>
+                                </div>
+                                <h2 class="section-title__title">Serviços que oferecemos aos nossos clientes</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="services-one__top-right">
+                            <p class="services-one__top-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quis nostrud
+                                exercitation ullamco laboris.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-one__bottom">
+                <ul class="list-unstyled services-one__list">
+                    <li class="services-one__single">
+                        <div class="services-one__content">
+                            <div class="services-one__icon">
+                                <span class="icon-coding"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="product-development.html">produtos <br>
+                                desenvolvimento</a></h3>
+                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                        </div>
+                    </li>
+                    <li class="services-one__single">
+                        <div class="services-one__content">
+                            <div class="services-one__icon">
+                                <span class="icon-design-thinking"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="ui-ux-designing.html">UI/UX <br> projetando</a>
+                            </h3>
+                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                        </div>
+                    </li>
+                    <li class="services-one__single">
+                        <div class="services-one__content">
+                            <div class="services-one__icon">
+                                <span class="icon-technology"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="digital-marketing.html">Digital <br>
+                                    marketing</a></h3>
+                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                        </div>
+                    </li>
+                    <li class="services-one__single">
+                        <div class="services-one__content">
+                            <div class="services-one__icon">
+                                <span class="icon-content"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="content-management.html">Content <br>
+                                    management</a></h3>
+                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                        </div>
+                    </li>
+                    <li class="services-one__single">
+                        <div class="services-one__content">
+                            <div class="services-one__icon">
+                                <span class="icon-optimization"></span>
+                            </div>
+                            <h3 class="services-one__title"><a href="data-analysis.html">Data <br> analysis</a></h3>
+                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Services One End-->
+
+   
 
 
+    <!--Project One Start-->
+    <section class="project-one">
+        <div class="project-one__inner">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline-box">
+                        <span class="section-title__tagline">Trabalho concluído recentemente</span>
+                        <div class="section-title-shape">
+                            <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="section-title__title">Nossos últimos projetos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                        <!--Project One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="/site/assets/images/project/project-1-1.jpg" alt="">
+                                <a href="project-details.html">
+                                    <img src="/site/assets/images/icon/project-1-icon-1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="project-one__content">
+                                <span class="project-one__sub-title">Technology</span>
+                                <h3 class="project-one__title"><a href="project-details.html">Cloud migration saves
+                                        <br> money & protect</a></h3>
+                                <p class="project-one__text">When an unknown printer took a<br> galley to and type
+                                    book.</p>
+                                <a href="project-details.html" class="thm-btn project-one__btn">View our project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                        <!--Project One Single-->
+                        <div class="project-one__single project-one__single-two">
+                            <div class="project-one__img">
+                                <img src="/site/assets/images/project/project-1-2.jpg" alt="">
+                                <a href="project-details.html">
+                                    <img src="/site/assets/images/icon/project-1-icon-2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="project-one__content">
+                                <span class="project-one__sub-title">Development</span>
+                                <h3 class="project-one__title"><a href="project-details.html">Perfect solution that
+                                        your <br> business demands</a></h3>
+                                <p class="project-one__text">When an unknown printer took a<br> galley to and type
+                                    book.</p>
+                                <a href="project-details.html" class="thm-btn project-one__btn">View our project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                        <!--Project One Single-->
+                        <div class="project-one__single project-one__single-three">
+                            <div class="project-one__img">
+                                <img src="/site/assets/images/project/project-1-3.jpg" alt="">
+                                <a href="project-details.html">
+                                    <img src="/site/assets/images/icon/project-1-icon-3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="project-one__content">
+                                <span class="project-one__sub-title">Solution</span>
+                                <h3 class="project-one__title"><a href="project-details.html">Trusted by The world's
+                                        best <br> organizations</a></h3>
+                                <p class="project-one__text">When an unknown printer took a<br> galley to and type
+                                    book.</p>
+                                <a href="project-details.html" class="thm-btn project-one__btn">View our project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Project One End-->
 
+    <!--Tech Services Start-->
+    <section class="tech-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="tech-services__left">
+                        <div class="tech-services__img-box wow slideInLeft" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
+                            <div class="tech-services__img">
+                                <img src="/site/assets/images/resources/tech-services-img-1.jpg" alt="">
+                            </div>
+                            <div class="tech-services__img-content">
+                                <p class="tech-services__img-text">At mi mauris <br> vestibulum <br> eu tellus <br>
+                                    tristique <br> sapien</p>
+                                <div class="tech-services__learn-more">
+                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="tech-services__right">
+                        <div class="section-title text-left">
+                            <div class="section-title__tagline-box">
+                                <span class="section-title__tagline">Fique protegido</span>
+                                <div class="section-title-shape">
+                                    <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                                </div>
+                            </div>
+                            <h2 class="section-title__title">Serviços de tecnologia para suas ideias de negócios</h2>
+                        </div>
+                        <p class="tech-services__text">Donec suscipit ante ipsum. Donec convallis quam at tortor
+                            hendrerit, ut elementum augue suscipit. Morbi tincidunt risus vel neque convallis
+                            pretium non nec justo.</p>
+                        <ul class="list-unstyled tech-services__points">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-tick"></span>
+                                </div>
+                                <div class="content">
+                                    <h4>Nós entregamos soluções perfeitas</h4>
+                                    <p>Lorem Ipsum nibh vel velit auctor aliqu aenean sollic.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-tick"></span>
+                                </div>
+                                <div class="content">
+                                    <h4>Trabalhamos com marcas globais</h4>
+                                    <p>Lorem Ipsum nibh vel velit auctor aliqu aenean sollic.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Tech Services End-->
 
+    <!--Counter One Start-->
+    <section class="counter-one">
+        <div class="counter-one__bg" style="background-image: url(/site/assets/images/backgrounds/funfact-bg-1-1.png);">
+        </div><!-- /.counter-one__bg -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="list-unstyled counter-one__list">
+                        <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
+                            <div class="counter-one__icon">
+                                <span class="icon-work"></span>
+                            </div>
+                            <h3 class="odometer" data-count="30">00</h3>
+                            <span class="counter-one__plus">+</span>
+                            <p class="counter-one__title">Years of experience</p>
+                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                        </li>
+                        <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
+                            <div class="counter-one__icon">
+                                <span class="icon-technical-support"></span>
+                            </div>
+                            <h3 class="odometer" data-count="2800">00</h3>
+                            <p class="counter-one__title">IT problems solved</p>
+                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                        </li>
+                        <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+                            <div class="counter-one__icon">
+                                <span class="icon-like"></span>
+                            </div>
+                            <h3 class="odometer" data-count="6960">00</h3>
+                            <p class="counter-one__title">Satisfied clients</p>
+                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                        </li>
+                        <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+                            <div class="counter-one__icon">
+                                <span class="icon-user"></span>
+                            </div>
+                            <h3 class="odometer" data-count="29">00</h3>
+                            <span class="counter-one__plus">+</span>
+                            <p class="counter-one__title">Pro team members</p>
+                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Counter One End-->
 
+    <!--Trusted Source Start-->
+    <section class="trusted-source">
+        <div class="container">
+            <div class="trusted-source__inner wow fadeInUp" data-wow-delay="300ms">
+                <div class="trusted-source__left">
+                    <h3 class="trusted-source__content">Trusted source in IT <br> services</h3>
+                    <div class="trusted-source__icon">
+                        <img src="/site/assets/images/icon/trusted-source-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="trusted-source__right">
+                    <div class="trusted-source__contact-info">
+                        <p>Have any question?</p>
+                        <a href="tel:980009850"><span>Free</span> +98 (000)-9850</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Trusted Source End-->
 
+    <!--Helping Start-->
+    <section class="helping">
+        <div class="helping-wrapper">
+            <div class="helping__left">
+                <div class="helping__left-bg"
+                    style="background-image: url(/site/assets/images/backgrounds/helping-left-bg.jpg);"></div>
+            </div>
+            <div class="helping__right">
+                <div class="helping-shape-1  wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                    <img src="/site/assets/images/shapes/helping-shape-1.png" alt="">
+                </div>
+                <div class="helping__right-content">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <span class="section-title__tagline">Technology solution</span>
+                            <div class="section-title-shape">
+                                <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                            </div>
+                        </div>
+                        <h2 class="section-title__title">Ajudando empresas ao redor do mundo</h2>
+                    </div>
+                    <p class="helping__text">Lorem ipsum is simply free text dolor sit am adipi we help you ensure
+                        everyone.</p>
+                    <ul class="list-unstyled helping__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-data-protection"></span>
+                            </div>
+                            <h3 class="helping__title">Proteção de dados</h3>
+                            <p class="helping__text-2">Lorem ipsum dolor sit amet consectetur notted.</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-backup-copy"></span>
+                            </div>
+                            <h3 class="helping__title">Optimize IT system</h3>
+                            <p class="helping__text-2">Lorem ipsum dolor sit amet consectetur notted.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Helping End-->
+
+    <!--Blog One Start-->
+    <section class="blog-one">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="section-title__tagline-box">
+                    <span class="section-title__tagline">O que está acontecendo</span>
+                    <div class="section-title-shape">
+                        <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                    </div>
+                </div>
+                <h2 class="section-title__title">Novos artigos</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                    <!--Blog One single-->
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="/site/assets/images/blog/blog-1-1.jpg" alt="">
+                            <div class="blog-one__tag">
+                                <p>Tech</p>
+                            </div>
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title">
+                                <a href="blog-details.html">Easy to use software new innovation</a>
+                            </h3>
+                            <div class="blog-one__bottom">
+                                <a href="blog-details.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                    <!--Blog One single-->
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="/site/assets/images/blog/blog-1-2.jpg" alt="">
+                            <div class="blog-one__tag">
+                                <p>solution</p>
+                            </div>
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title">
+                                <a href="blog-details.html">What is holding back the IT solution.</a>
+                            </h3>
+                            <div class="blog-one__bottom">
+                                <a href="blog-details.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                    <!--Blog One single-->
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="/site/assets/images/blog/blog-1-3.jpg" alt="">
+                            <div class="blog-one__tag">
+                                <p>Tech</p>
+                            </div>
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title">
+                                <a href="blog-details.html">Podcasting operational change management</a>
+                            </h3>
+                            <div class="blog-one__bottom">
+                                <a href="blog-details.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog One End-->
+
+    <!--Brand One Start-->
+    <section class="brand-one">
+        <div class="container">
+            <h4 class="brand-one__title">The business partners</h4>
+            <div class="thm-swiper__slider swiper-container"
+                data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+            "0": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "375": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "575": {
+                "spaceBetween": 30,
+                "slidesPerView": 3
+            },
+            "767": {
+                "spaceBetween": 50,
+                "slidesPerView": 4
+            },
+            "991": {
+                "spaceBetween": 50,
+                "slidesPerView": 5
+            },
+            "1199": {
+                "spaceBetween": 100,
+                "slidesPerView": 5
+            }
+        }}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-1.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-2.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-3.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-4.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-5.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-1.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-2.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-3.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-4.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="/site/assets/images/brand/brand-1-5.png" alt="">
+                    </div><!-- /.swiper-slide -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Brand One End-->
 @endsection

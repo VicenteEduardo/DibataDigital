@@ -1,212 +1,219 @@
-<div class="testimonials ptb-100">
-    <div class="container">
-        <div class="default-section-title default-section-title-middle">
-            <span>Parceiros</span>
-            <h3>Parceiros</h3>
-
-        </div>
-        <div class="section-content">
-            <div class="testimonial-slider-area owl-carousel">
-
-                @foreach ($copartners as $item)
-
-                <div class="testimonial-card"
-                    style='background-image:url("/storage/{{ $item->photo }}");background-position:center;background-size:cover;height:200px;'>
-                    <p></p>
-                    <div class="testimonial-intro-area">
-
-                    </div>
-                </div>
-                @endforeach
-
-
+<!--Site Footer Start-->
+        <footer class="site-footer">
+            <div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+                style="background-image: url(/site/assets/images/shapes/site-footer-shape-1.png);">
             </div>
-        </div>
-    </div>
-</div>
-<div class="newsletter ptb-100" style="background-color:#6bc9d2;">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <div class="newsletter-text-area">
-                    <h3>
-                        Junte-se à nossa newsletter</h3>
-                </div>
+            <div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+                style="background-image: url(/site/assets/images/shapes/site-footer-shape-2.png);">
             </div>
-            <div class="col-lg-7">
-                <div class="newsletter-form-area pt-30">
-                    <form class="newsletter-form" data-toggle="validator">
-                        <div class="input-group">
-                            <input type="email" class="input-newsletter form-control" placeholder="Your Email"
-                                name="EMAIL" required autocomplete="off">
-                            <button class="default-button" type="submit"><span><i
-                                        class="flaticon-paper-plane"></i></span></button>
+            <div class="site-footer__top">
+                <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="site-footer__top-left">
+                            <div class="site-footer__top-icon">
+                                <span class="icon-artificial-intelligence"></span>
+                            </div>
+                            <h3 class="site-footer__top-title">Helping you overcome your technology challenges</h3>
                         </div>
-                    </form>
-                    <div id="validator-newsletter" class="form-result"></div>
+                        <div class="site-footer__top-right">
+                            <a href="about.html" class="thm-btn site-footer__btn">Discover more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="site-footer__middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__logo">
+                                    <a href="index.html"><img src="/site/assets/images/resources/footer-logo.png" alt=""></a>
+                                </div>
+                                <div class="footer-widget__about-text-box">
+                                    <p class="footer-widget__about-text">Subsrcibe for our upcoming latest articles and
+                                        news resources</p>
+                                </div>
+                                <form class="footer-widget__newsletter-form">
+                                    <div class="footer-widget__newsletter-input-box">
+                                        <input type="email" placeholder="Email address" name="email">
+                                        <button type="submit" class="footer-widget__newsletter-btn"><img
+                                                src="/site/assets/images/icon/footer-widget-newsletter-send-icon.png"
+                                                alt=""></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__column footer-widget__links clearfix">
+                                <h3 class="footer-widget__title">Links</h3>
+                                <ul class="footer-widget__links-list list-unstyled clearfix">
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="team.html">Meet our team</a></li>
+                                    <li><a href="blog.html">News & media</a></li>
+                                    <li><a href="projects-page-1.html">Our projects</a></li>
+                                    <li><a href="contact.html">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__column footer-widget__contact clearfix">
+                                <h3 class="footer-widget__title">Contact</h3>
+                                <ul class="footer-widget__contact-list list-unstyled clearfix">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-telephone"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="tel:980009850">+98 (000)-9850</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-email"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-pin"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>66 broklyn golden street line <br> new york</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__column footer-widget__social-box clearfix">
+                                <div class="site-footer__social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer__bottom-inner">
+                                <p class="site-footer__bottom-text">© All Copyright 2022 by <a
+                                        href="#">Layerdrops.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="/site/assets/images/resources/footer-logo.png"
+                        width="155" alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@packageName__.com">needhelp@notech.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
         </div>
+        <!-- /.mobile-nav__content -->
     </div>
-</div>
+    <!-- /.mobile-nav__wrapper -->
 
-
-<div class="footer ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="footer-logo-area">
-                    <a href="index.html"><img src="/site/images/logo2.png" alt="logo" width="100"></a>
-                    <p>Workaholic SA é nome comercial da empresa W. Suntec – Sistemas Automáticos uma
-                        empresa voltada ao ramo da tecnologia na área de telecomunicações e automação.</p>
-                    <div class="footer-social-area">
-                        <ul>
-                            <li><a href="{{ $configuration->facebook }}" target="_blank"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="{{ $configuration->twitter }}" target="_blank"><i
-                                        class="fab fa-twitter"></i></a></li>
-                            <li><a href="{{ $configuration->instagram }}" target="_blank"><i
-                                        class="fab fa-instagram"></i></a></li>
-                  
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="footer-links footer-lp footer-services">
-                    <h3>
-                        Serviços</h3>
-                    <ul>
-                        @foreach ($services as $item)
-                        <li><a href="{!! url('/servicos/' . urlencode($item->name)) !!}">{!! mb_substr($item->name, 0,
-                                25, 'UTF-8') !!}...</a></li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="footer-links footer-lp">
-                    <h3>
-                        Links Úteis</h3>
-                    <ul>
-                        <li><a href="{{ route('site.home') }}">Home</a></li>
-                        <li><a href="{{ route('site.services') }}l">Serviços</a></li>
-                        <li><a href="{{ route('site.produt') }}">Produtos</a></li>
-                        <li><a href="{{ route('site.news') }}">Notícias</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contactos</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="footer-links footer-contact">
-                    <h3>
-                        Entrar em contato</h3>
-                    <div class="footer-contact-card">
-                        <i class="flaticon-phone-call"></i>
-                        <h6>Telefone</h6>
-                        <p><a href="tel:123456778">{{ $configuration->telefone }}</a></p>
-                    </div>
-                    <div class="footer-contact-card">
-                        <i class="flaticon-email"></i>
-                        <h6>Email</h6>
-                        <p>{{ $configuration->email }}</p>
-                    </div>
-                    <div class="footer-contact-card">
-                        <i class="flaticon-location"></i>
-                        <h6>Localização</h6>
-                        <p>{{ $configuration->adress }}</p>
-                    </div>
-                </div>
-            </div>
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
         </div>
+        <!-- /.search-popup__content -->
     </div>
-</div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-<div class="copyright">
-    <div class="container">
-        <p>Copyright @
-            <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-            </script>
-            <script>
-                document.write(new Date().getFullYear())
-            </script>. <strong></strong> Todos os direitos reservados por <a target="_blank"
-                href="https://vrlidentidade.ao/">VRLIDENTIDADE</a>
-        </p>
-    </div>
-</div>
+    <script src="/site/assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/site/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/site/assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="/site/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="/site/assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="/site/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="/site/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/site/assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/site/assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="/site/assets/vendors/odometer/odometer.min.js"></script>
+    <script src="/site/assets/vendors/swiper/swiper.min.js"></script>
+    <script src="/site/assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="/site/assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="/site/assets/vendors/wow/wow.js"></script>
+    <script src="/site/assets/vendors/isotope/isotope.js"></script>
+    <script src="/site/assets/vendors/countdown/countdown.min.js"></script>
+    <script src="/site/assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/site/assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="/site/assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="/site/assets/vendors/vegas/vegas.min.js"></script>
+    <script src="/site/assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="/site/assets/vendors/timepicker/timePicker.js"></script>
 
 
-<div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-</div>
 
 
-<div class="popup">
-    <div class="popup-content">
-        <div class="close-btn" id="popup-close">
-            <span></span>
-            <span></span>
-        </div>
-        <form>
-            <div class="input-group search-box">
-                <input type="text" class="form-control" placeholder="Search">
-                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-    </div>
-</div>
-<script src="/site/js/jquery.min.js"></script>
-<script src="/site/js/jquery-ui.min.js"></script>
-<script src="/site/js/bootstrap.bundle.min.js"></script>
-<script src="/site/js/meanmenu.js"></script>
-<script src="/site/js/owl.carousel2.thumbs.js"></script>
-<script src="/site/js/owl.carousel.min.js"></script>
-<script src="/site/js/magnific-popup.min.js"></script>
-<script src="/site/js/TweenMax.js"></script>
-<script src="/site/js/nice-select.min.js"></script>
-<script src="/site/js/form-validator.min.js"></script>
-<script src="/site/js/contact-form-script.js"></script>
-<script src="/site/js/ajaxchimp.min.js"></script>
-<script src="/site/js/appear.min.js"></script>
-<script src="/site/js/swiper-bundle.min.js"></script>
-<script src="/site/js/tilt.js"></script>
-<script src="/site/js/odometer.min.js"></script>
-<script src="/site/js/custom.js"></script>
+    <!-- template js -->
+    <script src="/site/assets/js/notech.js"></script>
 
-@if (session('create'))
-<script>
-    Swal.fire({
-            icon: 'success',
-            title: 'Pedido feito com sucesso!',
-            showConfirmButton: true
-        })
-</script>
-@endif
-@if (session('create'))
-<script>
-    Swal.fire({
-            icon: 'success',
-            title: 'Pedido feito com sucesso!',
-            showConfirmButton: true
-        })
-</script>
-@endif
 
-@yield('scripts')
+    <!-- toolbar js -->
+    <script src="/site/assets/vendors/toolbar/js/js.cookie.min.js"></script>
+    <script src="/site/assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
+    <script src="/site/assets/vendors/toolbar/js/toolbar.js"></script>
 
-<script>
-    $('#myModal').on('shown.bs.modal', function() {
-        $('#myInput').trigger('focus')
-    })
-    $('#myModal').on('shown.bs.modal', function() {
-        $('#myInput').trigger('focus')
-    })
-    $('#myModal').modal(options)
-</script>
+
 </body>
 
 </html>

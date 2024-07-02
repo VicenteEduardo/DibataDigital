@@ -1,117 +1,118 @@
-<div class="navbar-area">
-    <div class="main-responsive-nav">
-        <div class="container-fluid container-large">
-            <div class="mobile-nav">
-                <a href="{{ route('site.home') }}" class="logo"><img width="68" height="30"
-                        src="/site/images/logo2.png" alt="logo" /></a>
-                <ul class="menu-sidebar menu-small-device">
-                    <li><a class="cart-icon" href="cart.html"><i class="flaticon-cart"></i><span>03</span></a></li>
-                    <li><button class="popup-button"><i class="flaticon-loupe"></i></button></li>
-                    <li><a class="default-button" href="contact.html">Book Now<i class="flaticon-right-arrow"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body>
+
+
+    <!-- style switcher -->
+    <div class="style-switcher">
+        <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
+        <h3>Layout Options</h3>
+        <div class="layout-feature" id="colorMode">
+            <a href="" class="dark-switcher" data-theme="notech-dark">Dark</a>
+            <a href="" class="light-switcher" data-theme="notech-light">Light</a>
+            <button class="boxed-switcher">Boxed</button><!-- /.ltr-switcher -->
+        </div><!-- /.language-feature -->
     </div>
+    <!-- end style switcher -->
 
-    <div class="main-nav">
-        <div class="container-fluid container-large">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="{{ route('site.home') }}">
-                    <img width="100" src="/site/images/logo2.png" alt="logo" />
-                </a>
-                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item ">
-                            <a href="#" class="nav-link  active">Home</a>
 
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('site.services') }}" class="nav-link ">Serviços</a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('site.produt') }}" class="nav-link ">Produtos </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('site.agentes') }}" class="nav-link ">Agentes </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('site.news') }}" class="nav-link ">Notícias </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('site.about') }}" class="nav-link ">Sobre Nós </a>
-
-                        </li>
-                        <li class="nav-item"><a href="{{ route('site.contact') }}" class="nav-link">Contactos</a></li>
-                    </ul>
-                    <div class="menu-sidebar">
-                        <ul>
-                            <li><a class="cart-icon" href="{{ route('cart') }}"><i class="flaticon-cart"></i><span>
-                                        @if (session('cart'))
-                                        {{ count(session('cart')) }}
-                                        @else
-                                        @endif
-                                    </span></a>
-                            </li>
-
+    <div class="preloader">
+        
+        <img class="preloader__image" width="60" src="/site/assets/images/loader.png" alt="" />
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="main-header main-header--one clearfix">
+            <div class="main-header__top">
+                <div class="main-header__top-inner clearfix">
+                    <div class="main-header__top-left">
+                        <ul class="list-unstyled main-header__top-address">
                             <li>
-                                <button type="button" class="default-button" data-toggle="modal"
-                                    data-target="#exampleModal">
-                                    <span>Solicitar Técnico <i class="flaticon-right-arrow"></i></span>
-                                </button>
-
+                                <div class="icon">
+                                    <span class="icon-pin"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Luanda Angola</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="mailto:needhelp@company.com">geral@dibata.ao/a></p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
+                    <div class="main-header__top-right">
+                        <div class="main-header__top-right-content">
+                            <ul class="list-unstyled main-header__top-right-menu">
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Contactos</a></li>
+                            </ul>
+                            <div class="main-header__top-right-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Solicitar Técnico</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
             </div>
-            <div class="modal-body">
-                <form action="{{ route('site.solicitarTecnico') }}" method="post">
-                    @csrf
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12"> <label for="exampleInputEmail1">Nome Completo</label>
-                                <input required name="nome" type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Digite o seu nome">
+            <nav class="main-menu clearfix">
+                <div class="main-menu__wrapper clearfix">
 
-                            </div>
-                            <div class="col-12"> <label for="exampleInputEmail1">Telefone</label>
-                                <input required name="telefone" type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Digite Seu telefone">
+                    <div class="main-menu__left main-menu__left--two">
+                        <div class="main-menu__logo">
+                            <a href="index.html">
+                                <img class="logo-dark" src="/site/logo.png" alt="" width="170">
+                                <img class="logo-light" src="/site/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="main-menu__main-menu-box main-menu__main-menu-box--two">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="dropdown current megamenu">
+                                    <a href="{{ route('site.home') }}">Home</a>
+                                 
+                                </li>
+                            
+                                <li class="dropdown">
+                                    <a href="services.html">Serviços</a>
+                                   
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Projectos</a>
+                                   
+                                </li>
+                               
+                                <li class="dropdown">
+                                    <a href="#">Notícias</a>
+                                   
+                                </li>
+                                <li><a href="contact.html">Contactos</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    <div class="main-menu__right">
+                        <div class="main-menu__search-call">
+                            <div class="main-menu__call">
+                                <div class="main-menu__call-icon">
+                                    <img src="/site/assets/images/icon/main-menu-icon-comment.png" alt="">
+                                </div>
+                                <div class="main-menu__call-number">
+                                    <p>Have any question?</p>
+                                    <h5><a href="tel:926668880000"><span>Free</span> +98 (000)-9850</a></h5>
+                                </div>
                             </div>
-                            <div class="col-12"> <label for="exampleInputEmail1">Morada</label>
-                                <input required name="endereco" type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Digite a Morada">
+                            <div class="main-menu__search-box">
+                                <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                             </div>
                         </div>
                     </div>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-primary">Solicitar Técnico</button>
-            </div>
-        </div>
-    </form>
-    </div>
-</div>
+                </div>
+            </nav>
+        </header>

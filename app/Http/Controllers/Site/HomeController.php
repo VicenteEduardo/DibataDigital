@@ -23,15 +23,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        $response['slideshows'] = SlideShow::orderBy('id', 'desc')->limit(5)->get();
-        $response['news'] = News::where([['state', 'Autorizada']])->orderBy('id', 'desc')->limit(6)->get();
-        $response['galleries'] = Gallery::orderBy('id', 'desc')->limit(4)->get();
-        $response['services'] = Service::get();
-
-        $response['agentes'] = Agente::get();
-
-
-        $response['services'] = Service::get();
-        return view('site.home.index', $response);
+        
+        return view('site.home.index',);
     }
 }
