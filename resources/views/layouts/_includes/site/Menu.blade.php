@@ -1,21 +1,5 @@
 <body>
-
-
-    <!-- style switcher -->
-    <div class="style-switcher">
-        <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
-        <h3>Layout Options</h3>
-        <div class="layout-feature" id="colorMode">
-            <a href="" class="dark-switcher" data-theme="notech-dark">Dark</a>
-            <a href="" class="light-switcher" data-theme="notech-light">Light</a>
-            <button class="boxed-switcher">Boxed</button><!-- /.ltr-switcher -->
-        </div><!-- /.language-feature -->
-    </div>
-    <!-- end style switcher -->
-
-
     <div class="preloader">
-        
         <img class="preloader__image" width="60" src="/site/assets/images/loader.png" alt="" />
     </div>
     <!-- /.preloader -->
@@ -38,7 +22,7 @@
                                     <span class="icon-email"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:needhelp@company.com">geral@dibata.ao/a></p>
+                                    <p><a href="">geral@dibata.ao/a></p>
                                 </div>
                             </li>
                         </ul>
@@ -79,7 +63,7 @@
                                 </li>
                             
                                 <li class="dropdown">
-                                    <a href="services.html">Serviços</a>
+                                    <a href="{{ route('site.services') }}">Serviços</a>
                                    
                                 </li>
                                 <li class="dropdown">
@@ -88,10 +72,10 @@
                                 </li>
                                
                                 <li class="dropdown">
-                                    <a href="#">Notícias</a>
+                                    <a href="{{ route('site.news') }}">Notícias</a>
                                    
                                 </li>
-                                <li><a href="contact.html">Contactos</a></li>
+                                <li><a href="{{ route('site.contact') }}">Contactos</a></li>
                             </ul>
                         </div>
                     </div>
