@@ -13,10 +13,10 @@
                             <div class="site-footer__top-icon">
                                 <span class="icon-artificial-intelligence"></span>
                             </div>
-                            <h3 class="site-footer__top-title">Helping you overcome your technology challenges</h3>
+                            <h3 class="site-footer__top-title">Ajudando você a superar seus desafios tecnológicos</h3>
                         </div>
                         <div class="site-footer__top-right">
-                            <a href="about.html" class="thm-btn site-footer__btn">Discover more</a>
+                            <a href="about.html" class="thm-btn site-footer__btn">Descubra mais</a>
                         </div>
                     </div>
                 </div>
@@ -30,8 +30,7 @@
                                     <a href="index.html"><img src="/site/assets/images/resources/footer-logo.png" alt=""></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
-                                    <p class="footer-widget__about-text">Subsrcibe for our upcoming latest articles and
-                                        news resources</p>
+                                    <p class="footer-widget__about-text"></p>
                                 </div>
                                 <form class="footer-widget__newsletter-form">
                                     <div class="footer-widget__newsletter-input-box">

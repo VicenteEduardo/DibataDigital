@@ -25,7 +25,8 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                    <div class="image-layer" style="background-image: url(/site/assets/images/backgrounds/main-slider-1-1.jpg);">
+                    <div class="image-layer"
+                        style="background-image: url(/site/assets/images/backgrounds/main-slider-1-1.jpg);">
                     </div>
                     <!-- /.image-layer -->
                     <div class="main-slider__shape-1">
@@ -41,11 +42,12 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="main-slider__content">
-                                    <p>It Software Solution &</p>
-                                    <h2>technology</h2>
+                                    <p>Solução de software de TI e</p>
+                                    <h2>tecnologia</h2>
                                     <div class="main-slider__btn-video-box">
                                         <div class="main-slider__btn-box">
-                                            <a href="about.html" class="thm-btn main-slider__btn">Descubra mais</a>
+                                            <a href="{{ route('site.about') }}" class="thm-btn main-slider__btn">Descubra
+                                                mais</a>
                                         </div>
                                         <div class="main-slider__video-link">
                                             <a href="https://www.youtube.com/Assistir?v=Get7rqXYrbQ" class="video-popup">
@@ -64,7 +66,8 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="image-layer" style="background-image: url(/site/assets/images/backgrounds/main-slider-1-2.jpg);">
+                    <div class="image-layer"
+                        style="background-image: url(/site/assets/images/backgrounds/main-slider-1-2.jpg);">
                     </div>
                     <!-- /.image-layer -->
                     <div class="main-slider__shape-1">
@@ -80,11 +83,12 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="main-slider__content">
-                                    <p>It Software Solution &</p>
-                                    <h2>technology</h2>
+                                    <p>Solução de software de TI&</p>
+                                    <h2>tecnologia</h2>
                                     <div class="main-slider__btn-video-box">
                                         <div class="main-slider__btn-box">
-                                            <a href="about.html" class="thm-btn main-slider__btn">Descubra mais</a>
+                                            <a href="{{ route('site.about') }}" class="thm-btn main-slider__btn">Descubra
+                                                mais</a>
                                         </div>
                                         <div class="main-slider__video-link">
                                             <a href="https://www.youtube.com/Assistir?v=Get7rqXYrbQ" class="video-popup">
@@ -103,7 +107,8 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="image-layer" style="background-image: url(/site/assets/images/backgrounds/main-slider-1-3.jpg);">
+                    <div class="image-layer"
+                        style="background-image: url(/site/assets/images/backgrounds/main-slider-1-3.jpg);">
                     </div>
                     <!-- /.image-layer -->
                     <div class="main-slider__shape-1">
@@ -123,7 +128,8 @@
                                     <h2>tecnologia</h2>
                                     <div class="main-slider__btn-video-box">
                                         <div class="main-slider__btn-box">
-                                            <a href="about.html" class="thm-btn main-slider__btn">Descubra mais</a>
+                                            <a href="{{ route('site.about') }}" class="thm-btn main-slider__btn">Descubra
+                                                mais</a>
                                         </div>
                                         <div class="main-slider__video-link">
                                             <a href="https://www.youtube.com/Assistir?v=Get7rqXYrbQ" class="video-popup">
@@ -154,8 +160,9 @@
     <section class="get-solutions">
         <div class="container">
             <div class="get-solutions__inner">
-                <p class="get-solutions__text">Pare de desperdiçar tempo e dinheiro com tecnologia. <a href="about.html">Explorar
-                    notech</a> e obtenha as melhores soluções.</p>
+                <p class="get-solutions__text">Pare de desperdiçar tempo e dinheiro com tecnologia. <a
+                        href="{{ route('site.about') }}">Explorar
+                        notech</a> e obtenha as melhores soluções.</p>
             </div>
         </div>
     </section>
@@ -171,18 +178,21 @@
                         <div class="feature-one__img">
                             <img src="/site/assets/images/resources/feature-1-1.jpg" alt="">
                             <div class="feature-one__title-box">
-                                <h3 class="feature-one__title"><a href="about.html">Gerenciar serviços de TI</a></h3>
+                                <h3 class="feature-one__title"><a href="{{ route('site.about') }}">Gerenciar serviços de
+                                        TI</a></h3>
                             </div>
                             <div class="feature-one__hover-content">
                                 <div class="feature-one__icon">
                                     <span class="icon-system"></span>
                                 </div>
-                                <h3 class="feature-one__hover-title"><a href="about.html">Gerenciar serviços de TI</a>
+                                <h3 class="feature-one__hover-title"><a href="{{ route('site.about') }}">Gerenciar
+                                        serviços de TI</a>
                                 </h3>
                                 <p class="feature-one__hover-text">Existem muitos lipsum de sábios de passagem de
                                     disponíveis alguns.</p>
                                 <div class="feature-one__learn-more">
-                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                    <a href="{{ route('site.about') }}">Saber mais<i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -194,17 +204,20 @@
                         <div class="feature-one__img">
                             <img src="/site/assets/images/resources/feature-1-2.jpg" alt="">
                             <div class="feature-one__title-box">
-                                <h3 class="feature-one__title"><a href="about.html">Cíber segurança</a></h3>
+                                <h3 class="feature-one__title"><a href="{{ route('site.about') }}">Cíber segurança</a>
+                                </h3>
                             </div>
                             <div class="feature-one__hover-content">
                                 <div class="feature-one__icon">
                                     <span class="icon-cyber"></span>
                                 </div>
-                                <h3 class="feature-one__hover-title"><a href="about.html">Cíber segurança</a></h3>
+                                <h3 class="feature-one__hover-title"><a href="{{ route('site.about') }}">Cíber
+                                        segurança</a></h3>
                                 <p class="feature-one__hover-text">Taqui estão muitos lipsum de in pass sábios de
                                     disponíveis alguns.</p>
                                 <div class="feature-one__learn-more">
-                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                    <a href="{{ route('site.about') }}">Saber mais<i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -216,18 +229,21 @@
                         <div class="feature-one__img">
                             <img src="/site/assets/images/resources/feature-1-3.jpg" alt="">
                             <div class="feature-one__title-box">
-                                <h3 class="feature-one__title"><a href="about.html">Digital experience</a></h3>
+                                <h3 class="feature-one__title"><a href="{{ route('site.about') }}">Digital experience</a>
+                                </h3>
                             </div>
                             <div class="feature-one__hover-content">
                                 <div class="feature-one__icon">
                                     <span class="icon-application"></span>
                                 </div>
-                                <h3 class="feature-one__hover-title"><a href="about.html">Digital experience</a>
+                                <h3 class="feature-one__hover-title"><a href="{{ route('site.about') }}">Digital
+                                        experience</a>
                                 </h3>
                                 <p class="feature-one__hover-text">Existem muitos lipsum de sábios de passagem de
                                     disponíveis alguns.</p>
                                 <div class="feature-one__learn-more">
-                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                    <a href="{{ route('site.about') }}">Saber mais<i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -256,8 +272,7 @@
                                 <span class="get-to-know__plus">+</span>
                                 <p class="get-to-know__client-text">worldwide clients</p>
                             </div>
-                            <div class="get-to-know-shape-1"><img src="/site/d.png" 
-                                    alt="" width="300"></div>
+                            <div class="get-to-know-shape-1"><img src="/site/d.png" alt="" width="300"></div>
                         </div>
                     </div>
                 </div>
@@ -272,36 +287,13 @@
                             </div>
                             <h2 class="section-title__title">Soluções fáceis para seus problemas de TI</h2>
                         </div>
-                        <p class="get-to-know__text">Lorem ipsum dolor sit amet, consectetur nod adipisicing elit
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn.</p>
-                        <ul class="list-unstyled get-to-know__points">
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-check"></span>
-                                </div>
-                                <div class="text">
-                                    <p>Donec scelerisque egestas purus eget fringilla</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-check"></span>
-                                </div>
-                                <div class="text">
-                                    <p>Mauris imperdiet non ligula et lobortis.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="get-to-know__it-solutions">
-                            <div class="get-to-know__it-solutions-icon">
-                                <span class="icon-data-analytics"></span>
-                            </div>
-                            <div class="get-to-know__it-solutions-text-box">
-                                <p class="get-to-know__it-solutions-text">Pare de se preocupar, nós cuidamos dos seus
-                                    problemas de tecnologia.</p>
-                            </div>
-                        </div>
-                        <a href="about.html" class="get-to-know__btn thm-btn">Descubra mais</a>
+                        <p class="get-to-know__text">A Dibata Digital é uma empresa dedicada a fornecer soluções
+                            tecnológicas avançadas e criativas para ajudar nossos clientes a prosperar na era digital. Nossa
+                            equipe é composta por especialistas em diversas áreas, garantindo um serviço de alta qualidade e
+                            resultados excepcionais.</p>
+
+
+                        <a href="{{ route('site.about') }}" class="get-to-know__btn thm-btn">Descubra mais</a>
                     </div>
                 </div>
             </div>
@@ -331,9 +323,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="services-one__top-right">
-                            <p class="services-one__top-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quis nostrud
-                                exercitation ullamco laboris.</p>
+                            <p class="services-one__top-text">Conheça nossos serviços</p>
                         </div>
                     </div>
                 </div>
@@ -345,9 +335,10 @@
                             <div class="services-one__icon">
                                 <span class="icon-coding"></span>
                             </div>
-                            <h3 class="services-one__title"><a href="product-development.html">produtos <br>
-                                desenvolvimento</a></h3>
-                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                            <h3 class="services-one__title"><a href="product-development.html">Gestão de Cyber Coffee <br>
+                                </a></h3>
+                            <p class="services-one__text">Oferecemos soluções eficientes para a administração de cyber
+                                cafés, garantindo operações seguras e otimizadas para um melhor atendimento aos clientes</p>
                         </div>
                     </li>
                     <li class="services-one__single">
@@ -355,19 +346,22 @@
                             <div class="services-one__icon">
                                 <span class="icon-design-thinking"></span>
                             </div>
-                            <h3 class="services-one__title"><a href="ui-ux-designing.html">UI/UX <br> projetando</a>
+                            <h3 class="services-one__title"><a href="ui-ux-designing.html">Video Maker</a>
                             </h3>
-                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                            <p class="services-one__text">Nossa equipe de produção e edição de vídeo cria conteúdos visuais
+                                impactantes e profissionais que capturam a essência da sua mensagem e envolvem seu público
+                            </p>
                         </div>
                     </li>
                     <li class="services-one__single">
                         <div class="services-one__content">
                             <div class="services-one__icon">
-                                <span class="icon-technology"></span>
+                                <span class="icon-tecnologia"></span>
                             </div>
-                            <h3 class="services-one__title"><a href="digital-marketing.html">Digital <br>
-                                    marketing</a></h3>
-                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                            <h3 class="services-one__title"><a href="digital-marketing.html">Gestor de Redes Sociais</a>
+                            </h3>
+                            <p class="services-one__text">Desenvolvemos estratégias eficazes de gestão de redes sociais
+                                para aumentar seu engajamento, expandir sua presença online</p>
                         </div>
                     </li>
                     <li class="services-one__single">
@@ -375,9 +369,11 @@
                             <div class="services-one__icon">
                                 <span class="icon-content"></span>
                             </div>
-                            <h3 class="services-one__title"><a href="content-management.html">Content <br>
-                                    management</a></h3>
-                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                            <h3 class="services-one__title"><a href="content-management.html">Machine Learning e Deep
+                                    Learning</a></h3>
+                            <p class="services-one__text">Utilizamos técnicas avançadas de aprendizado de máquina e
+                                aprendizado profundo para criar soluções inteligentes e inovadoras que impulsionam o seu
+                                negócio.</p>
                         </div>
                     </li>
                     <li class="services-one__single">
@@ -385,8 +381,9 @@
                             <div class="services-one__icon">
                                 <span class="icon-optimization"></span>
                             </div>
-                            <h3 class="services-one__title"><a href="data-analysis.html">Data <br> analysis</a></h3>
-                            <p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+                            <h3 class="services-one__title"><a href="data-analysis.html">Investimentos Online</a></h3>
+                            <p class="services-one__text">Fornecemos consultoria e ferramentas para investir de forma
+                                segura e eficiente no mercado digital, ajudando você a maximizar seus retornos</p>
                         </div>
                     </li>
                 </ul>
@@ -395,7 +392,7 @@
     </section>
     <!--Services One End-->
 
-   
+
 
 
     <!--Project One Start-->
@@ -422,7 +419,7 @@
                                 </a>
                             </div>
                             <div class="project-one__content">
-                                <span class="project-one__sub-title">Technology</span>
+                                <span class="project-one__sub-title">tecnologia</span>
                                 <h3 class="project-one__title"><a href="project-details.html">Cloud migration saves
                                         <br> money & protect</a></h3>
                                 <p class="project-one__text">When an unknown printer took a<br> galley to and type
@@ -490,7 +487,8 @@
                                 <p class="tech-services__img-text">At mi mauris <br> vestibulum <br> eu tellus <br>
                                     tristique <br> sapien</p>
                                 <div class="tech-services__learn-more">
-                                    <a href="about.html">Saber mais<i class="fa fa-long-arrow-alt-right"></i></a>
+                                    <a href="{{ route('site.about') }}">Saber mais<i
+                                            class="fa fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -551,24 +549,24 @@
                             </div>
                             <h3 class="odometer" data-count="30">00</h3>
                             <span class="counter-one__plus">+</span>
-                            <p class="counter-one__title">Years of experience</p>
-                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                            <p class="counter-one__title">Anos de experiência</p>
+                           
                         </li>
                         <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
                             <div class="counter-one__icon">
                                 <span class="icon-technical-support"></span>
                             </div>
                             <h3 class="odometer" data-count="2800">00</h3>
-                            <p class="counter-one__title">IT problems solved</p>
-                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                            <p class="counter-one__title">Problemas de TI resolvidos</p>
+                           
                         </li>
                         <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
                             <div class="counter-one__icon">
                                 <span class="icon-like"></span>
                             </div>
                             <h3 class="odometer" data-count="6960">00</h3>
-                            <p class="counter-one__title">Satisfied clients</p>
-                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                            <p class="counter-one__title">Clientes satisfeitos</p>
+                           
                         </li>
                         <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
                             <div class="counter-one__icon">
@@ -576,8 +574,8 @@
                             </div>
                             <h3 class="odometer" data-count="29">00</h3>
                             <span class="counter-one__plus">+</span>
-                            <p class="counter-one__title">Pro team members</p>
-                            <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                            <p class="counter-one__title">Membros da equipe profissional</p>
+                           
                         </li>
                     </ul>
                 </div>
@@ -591,14 +589,14 @@
         <div class="container">
             <div class="trusted-source__inner wow fadeInUp" data-wow-delay="300ms">
                 <div class="trusted-source__left">
-                    <h3 class="trusted-source__content">Trusted source in IT <br> services</h3>
+                    <h3 class="trusted-source__content">Fonte confiável em TI<br> Serviços</h3>
                     <div class="trusted-source__icon">
                         <img src="/site/assets/images/icon/trusted-source-icon.png" alt="">
                     </div>
                 </div>
                 <div class="trusted-source__right">
                     <div class="trusted-source__contact-info">
-                        <p>Have any question?</p>
+                        <p>Tem alguma pergunta?</p>
                         <a href="tel:980009850"><span>Free</span> +98 (000)-9850</a>
                     </div>
                 </div>
@@ -621,7 +619,7 @@
                 <div class="helping__right-content">
                     <div class="section-title text-left">
                         <div class="section-title__tagline-box">
-                            <span class="section-title__tagline">Technology solution</span>
+                            <span class="section-title__tagline">tecnologia solution</span>
                             <div class="section-title-shape">
                                 <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
                             </div>
@@ -642,7 +640,7 @@
                             <div class="icon">
                                 <span class="icon-backup-copy"></span>
                             </div>
-                            <h3 class="helping__title">Optimize IT system</h3>
+                            <h3 class="helping__title">Otimizar o sistema de TI</h3>
                             <p class="helping__text-2">Lorem ipsum dolor sit amet consectetur notted.</p>
                         </li>
                     </ul>
