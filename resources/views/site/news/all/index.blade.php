@@ -1,73 +1,205 @@
 @extends('layouts.merge.site')
-@section('titulo', ' Notícias')
+@section('titulo', 'Notícias')
 @section('content')
-
-    <div class="uni-banner blog-uni-banner">
-        <div class="container-fluid container-large">
-            <div class="uni-banner-text-area">
-                <h1>Notícias</h1>
-                <ul>
-                    <li><a href="{{ route('site.home') }}">Home</a></li>
-                    <li>Notícias</li>
-                </ul>
-            </div>
+<!--Page Header Start-->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(/site/assets/images/backgrounds/page-header-bg.jpg)">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><span>/</span></li>
+                <li class="active">Blog</li>
+            </ul>
+            <h2>Blog posts</h2>
         </div>
     </div>
+</section>
+<!--Page Header End-->
 
-
-    <div class="blog pt-70 pb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="row justify-content-center">
-                        @foreach ($news as $item)
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-card-img">
-                                        <a href="{!! url('/noticia/' . urlencode($item->title)) !!}"><img src="/storage/{{ $item->path }}"
-                                                alt="image"></a>
-                                    </div>
-                                    <div class="blog-card-text">
-                                        <span class="blog-date"><i class="flaticon-deadline"></i>
-                                            {{ date('d-m-Y', strtotime($item->date)) }}</span>
-                                        <h4><a href="{!! url('/noticia/' . urlencode($item->title)) !!}">{!! mb_substr($item->title, 0, 48, 'UTF-8') !!}</a></h4>
-
-                                        <a class="read-more-btn" href="{!! url('/noticia/' . urlencode($item->title)) !!}">consulte Mais informação <i
-                                                class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-
+<!--Blog Page Start-->
+<section class="blog-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <!--Blog One single-->
+                <div class="blog-one__single">
+                    <div class="blog-one__img">
+                        <img src="/site/assets/images/blog/blog-1-1.jpg" alt="">
+                        <div class="blog-one__tag">
+                            <p>Tech</p>
+                        </div>
+                        <a href="blog-details.html">
+                            <span class="blog-one__plus"></span>
+                        </a>
                     </div>
-                    <div class="paginations mt-30">
-                        <div class="col-12">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-4 py-5">
-                                    <b>{{ $news->links() }}</b>
-                                </div>
-                            </div>
+                    <div class="blog-one__content">
+                        <ul class="list-unstyled blog-one__meta">
+                            <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                            </li>
+                            <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-one__title">
+                            <a href="blog-details.html">Easy to use software new innovation</a>
+                        </h3>
+                        <div class="blog-one__bottom">
+                            <a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="sidebar-area mt-30 pl-20">
-
-                        <div class="sidebar-card sidebar-categories mt-30">
-                            <h3>Outras Notícias</h3>
-                            <ul>
-                                @foreach ($lasted as $item)
-                                    <li><a href="{!! url('/noticia/' . urlencode($item->title)) !!}"><span><i class="flaticon-double-chevron"></i>{!! mb_substr($item->title, 0, 48, 'UTF-8') !!}</span> </a></li>
-                                @endforeach
-
-                            </ul>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                <!--Blog One single-->
+                <div class="blog-one__single">
+                    <div class="blog-one__img">
+                        <img src="/site/assets/images/blog/blog-1-2.jpg" alt="">
+                        <div class="blog-one__tag">
+                            <p>solution</p>
                         </div>
-                       
+                        <a href="blog-details.html">
+                            <span class="blog-one__plus"></span>
+                        </a>
+                    </div>
+                    <div class="blog-one__content">
+                        <ul class="list-unstyled blog-one__meta">
+                            <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                            </li>
+                            <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-one__title">
+                            <a href="blog-details.html">What is holding back the IT solution.</a>
+                        </h3>
+                        <div class="blog-one__bottom">
+                            <a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                <!--Blog One single-->
+                <div class="blog-one__single">
+                    <div class="blog-one__img">
+                        <img src="/site/assets/images/blog/blog-1-3.jpg" alt="">
+                        <div class="blog-one__tag">
+                            <p>Tech</p>
+                        </div>
+                        <a href="blog-details.html">
+                            <span class="blog-one__plus"></span>
+                        </a>
+                    </div>
+                    <div class="blog-one__content">
+                        <ul class="list-unstyled blog-one__meta">
+                            <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                            </li>
+                            <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-one__title">
+                            <a href="blog-details.html">Podcasting operational change management</a>
+                        </h3>
+                        <div class="blog-one__bottom">
+                            <a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="400ms">
+                <!--Blog One single-->
+                <div class="blog-one__single">
+                    <div class="blog-one__img">
+                        <img src="/site/assets/images/blog/blog-1-4.jpg" alt="">
+                        <div class="blog-one__tag">
+                            <p>software</p>
+                        </div>
+                        <a href="blog-details.html">
+                            <span class="blog-one__plus"></span>
+                        </a>
+                    </div>
+                    <div class="blog-one__content">
+                        <ul class="list-unstyled blog-one__meta">
+                            <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                            </li>
+                            <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-one__title">
+                            <a href="blog-details.html">Capitalize on low hanging fruit</a>
+                        </h3>
+                        <div class="blog-one__bottom">
+                            <a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="500ms">
+                <!--Blog One single-->
+                <div class="blog-one__single">
+                    <div class="blog-one__img">
+                        <img src="/site/assets/images/blog/blog-1-5.jpg" alt="">
+                        <div class="blog-one__tag">
+                            <p>design</p>
+                        </div>
+                        <a href="blog-details.html">
+                            <span class="blog-one__plus"></span>
+                        </a>
+                    </div>
+                    <div class="blog-one__content">
+                        <ul class="list-unstyled blog-one__meta">
+                            <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                            </li>
+                            <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-one__title">
+                            <a href="blog-details.html">A quick solutions for daily problem</a>
+                        </h3>
+                        <div class="blog-one__bottom">
+                            <a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="600ms">
+                <!--Blog One single-->
+                <div class="blog-one__single">
+                    <div class="blog-one__img">
+                        <img src="/site/assets/images/blog/blog-1-6.jpg" alt="">
+                        <div class="blog-one__tag">
+                            <p>Tech</p>
+                        </div>
+                        <a href="blog-details.html">
+                            <span class="blog-one__plus"></span>
+                        </a>
+                    </div>
+                    <div class="blog-one__content">
+                        <ul class="list-unstyled blog-one__meta">
+                            <li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+                            </li>
+                            <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-one__title">
+                            <a href="blog-details.html">Bring to the table win-win survival</a>
+                        </h3>
+                        <div class="blog-one__bottom">
+                            <a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="blog-pagination justify-content-center">
+                    <a class="prev page-numbers" href="#"><i class="fa fa-angle-left"></i></a>
+                    <span class="page-numbers current">1</span>
+                    <a class="page-numbers" href="#">2</a>
+                    <a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a> </div>
+                <!-- /.blog-pagination -->
+            </div>
         </div>
     </div>
-
-
+</section>
+<!--Blog Page End-->
 @endsection

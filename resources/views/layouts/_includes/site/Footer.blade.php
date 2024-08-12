@@ -16,7 +16,7 @@
                             <h3 class="site-footer__top-title">Ajudando você a superar seus desafios tecnológicos</h3>
                         </div>
                         <div class="site-footer__top-right">
-                            <a href="about.html" class="thm-btn site-footer__btn">Descubra mais</a>
+                            <a href="{{ route('site.about') }}" class="thm-btn site-footer__btn">Descubra mais</a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
-                                    <a href="index.html"><img src="/site/assets/images/resources/footer-logo.png" alt=""></a>
+                                    <a href="{{ route('site.home') }}"><img src="/site/assets/images/resources/footer-logo.png" alt=""></a>
                                 </div>
                                 <div class="footer-widget__about-text-box">
                                     <p class="footer-widget__about-text"></p>
@@ -46,10 +46,11 @@
                             <div class="footer-widget__column footer-widget__links clearfix">
                                 <h3 class="footer-widget__title">Links</h3>
                                 <ul class="footer-widget__links-list list-unstyled clearfix">
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="team.html">Meet our team</a></li>
-                                    <li><a href="blog.html">News & media</a></li>
-                                    <li><a href="projects-page-1.html">Our projects</a></li>
+                                    <li><a href="{{ route('site.home') }}">Home</a></li>
+                                    <li><a href="{{ route('site.about') }}">Serviços</a></li>
+                                    <li><a href="team.html">Projectos</a></li>
+                                    <li><a href="blog.html">Notícias</a></li>
+                                    <li><a href="projects-page-1.html">Contactos</a></li>
                                     <li><a href="contact.html">Contacts</a></li>
                                 </ul>
                             </div>
@@ -125,7 +126,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="/site/assets/images/resources/footer-logo.png"
+                <a href="{{ route('site.home') }}" aria-label="logo image"><img src="/site/assets/images/resources/footer-logo.png"
                         width="155" alt="" /></a>
             </div>
             <!-- /.logo-box -->

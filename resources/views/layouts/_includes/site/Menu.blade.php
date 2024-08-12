@@ -49,7 +49,7 @@
 
                     <div class="main-menu__left main-menu__left--two">
                         <div class="main-menu__logo">
-                            <a href="index.html">
+                            <a href="{{ route('site.home') }}">
                                 <img class="logo-dark" src="/site/logo.png" alt="" width="170">
                                 <img class="logo-light" src="/site/logo.png" alt="">
                             </a>
@@ -67,7 +67,7 @@
                                    
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#">Projectos</a>
+                                    <a href="{{ route('site.about') }}">Sobre Nós</a>
                                    
                                 </li>
                                

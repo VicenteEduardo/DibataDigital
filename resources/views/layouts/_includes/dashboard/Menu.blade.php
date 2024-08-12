@@ -42,7 +42,7 @@
         <!-- nav bar -->
         <div class="w-100  d-flex">
             <a class="navbar-brand mx-auto  flex-fill text-center" href="{{ route('admin.home') }}">
-                <img rel="icon" src="/site/images/logo2.png" style="width:220px; margin:auto" />
+                <img rel="icon" src="/site/logo.png" style="width:220px; margin:auto" />
 
             </a>
         </div>
@@ -74,31 +74,7 @@
 
 
 
-            {{-- Menu de Actualidade --}}
-            <p class="text-muted nav-heading mt-4 mb-1">
-                <span> Vendas </span>
-            </p>
-            {{-- categoria de Actualidade --}}
-            <li class="nav-item dropdown">
-                <a href="#Vendas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
-                    <i class="fe fe-credit-card fe-16"></i>
-                    <span class="ml-3 item-text">Vendas</span>
-                </a>
-                <ul class="collapse list-unstyled pl-4 w-100" id="Vendas">
-
-                    <li class="nav-item">
-                        <a class="nav-link pl-3" href="{{ route('admin.vendas.index') }}">
-                            <span class="ml-1 item-text">Lista de Vendas</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-3" href="{{ route('admin.estatistica.index') }}">
-                            <span class="ml-1 item-text">Estatística </span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
+         
 
             {{-- Menu de Actualidade --}}
             <p class="text-muted nav-heading mt-4 mb-1">

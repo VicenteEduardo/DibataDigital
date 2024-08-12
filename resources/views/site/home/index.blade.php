@@ -162,7 +162,7 @@
             <div class="get-solutions__inner">
                 <p class="get-solutions__text">Pare de desperdiçar tempo e dinheiro com tecnologia. <a
                         href="{{ route('site.about') }}">Explorar
-                        notech</a> e obtenha as melhores soluções.</p>
+                        Dibata Digital</a> e obtenha as melhores soluções.</p>
             </div>
         </div>
     </section>
@@ -484,8 +484,7 @@
                                 <img src="/site/assets/images/resources/tech-services-img-1.jpg" alt="">
                             </div>
                             <div class="tech-services__img-content">
-                                <p class="tech-services__img-text">At mi mauris <br> vestibulum <br> eu tellus <br>
-                                    tristique <br> sapien</p>
+                                <p class="tech-services__img-text">A Dibata Digital se destaca pela sua capacidade de integrar tecnologia e estratégia de forma única, garantindo resultados excepcionais e um impacto positivo duradouron</p>
                                 <div class="tech-services__learn-more">
                                     <a href="{{ route('site.about') }}">Saber mais<i
                                             class="fa fa-long-arrow-alt-right"></i></a>
@@ -505,9 +504,7 @@
                             </div>
                             <h2 class="section-title__title">Serviços de tecnologia para suas ideias de negócios</h2>
                         </div>
-                        <p class="tech-services__text">Donec suscipit ante ipsum. Donec convallis quam at tortor
-                            hendrerit, ut elementum augue suscipit. Morbi tincidunt risus vel neque convallis
-                            pretium non nec justo.</p>
+                        <p class="tech-services__text">Transformar suas ideias em soluções práticas e eficazes é o que fazemos melhor. Na Dibata Digital, oferecemos serviços de tecnologia sob medida para impulsionar suas ideias de negócios e garantir que elas se concretizem com sucesso.</p>
                         <ul class="list-unstyled tech-services__points">
                             <li>
                                 <div class="icon">
@@ -515,7 +512,7 @@
                                 </div>
                                 <div class="content">
                                     <h4>Nós entregamos soluções perfeitas</h4>
-                                    <p>Lorem Ipsum nibh vel velit auctor aliqu aenean sollic.</p>
+                                    <p>Na Dibata Digital, nosso compromisso é entregar soluções perfeitas que atendem e superam suas expectativas. Entendemos que cada desafio de negócios é único e, por isso, personalizamos nossas soluções para se alinharem exatamente às suas necessidades e objetivos.</p>
                                 </div>
                             </li>
                             <li>
@@ -524,7 +521,7 @@
                                 </div>
                                 <div class="content">
                                     <h4>Trabalhamos com marcas globais</h4>
-                                    <p>Lorem Ipsum nibh vel velit auctor aliqu aenean sollic.</p>
+                                    <p>Na Dibata Digital, temos o orgulho de colaborar com marcas globais, oferecendo soluções tecnológicas que atendem aos mais altos padrões internacionais.</p>
                                 </div>
                             </li>
                         </ul>
@@ -626,22 +623,21 @@
                         </div>
                         <h2 class="section-title__title">Ajudando empresas ao redor do mundo</h2>
                     </div>
-                    <p class="helping__text">Lorem ipsum is simply free text dolor sit am adipi we help you ensure
-                        everyone.</p>
+                    <p class="helping__text">Ajudando empresas ao redor do mundo</p>
                     <ul class="list-unstyled helping__points">
                         <li>
                             <div class="icon">
                                 <span class="icon-data-protection"></span>
                             </div>
                             <h3 class="helping__title">Proteção de dados</h3>
-                            <p class="helping__text-2">Lorem ipsum dolor sit amet consectetur notted.</p>
+                            <p class="helping__text-2">Na Dibata Digital, a proteção de dados é uma prioridade absoluta. Entendemos a importância de garantir a segurança e a privacidade das informações em um cenário digital cada vez mais complexo e ameaçado. Nossas soluções são projetadas para proteger seus dados contra acessos não autorizados, vazamentos e outras ameaças.</p>
                         </li>
                         <li>
                             <div class="icon">
                                 <span class="icon-backup-copy"></span>
                             </div>
                             <h3 class="helping__title">Otimizar o sistema de TI</h3>
-                            <p class="helping__text-2">Lorem ipsum dolor sit amet consectetur notted.</p>
+                            <p class="helping__text-2">Na Dibata Digital, otimizar o sistema de TI é fundamental para aumentar a eficiência e a performance da sua empresa. Analisamos e aprimoramos sua infraestrutura tecnológica para garantir que ela funcione de maneira rápida, segura e econômica.</p>
                         </li>
                     </ul>
                 </div>

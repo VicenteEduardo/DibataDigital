@@ -1,60 +1,74 @@
 @extends('layouts.merge.site')
 @section('titulo', 'Notícia')
 @section('content')
-    <div class="uni-banner blog-uni-banner">
-        <div class="container-fluid container-large">
-            <div class="uni-banner-text-area">
-                <h1>{{ $service->name }}</h1>
-                <ul>
-                    <li><a href="{{ route('site.services') }}">Serviços</a></li>
-                    <li>{{ $service->name }}</li>
-                </ul>
-            </div>
+<!--Page Header Start-->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(/site/assets/images/backgrounds/page-header-bg.jpg)">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="{{ route('site.home') }}">Home</a></li>
+                <li><span>/</span></li>
+                <li class="active">{{ $service->name }}</li>
+            </ul>
+            <h2>{{ $service->name }}</h2>
         </div>
     </div>
-    <div class="blog-details ptb-100">
-        <div class="container">
+</section>
+<!--Page Header End-->
+
+<!--Project Details Start-->
+<section class="project-details">
+    <div class="container">
+        <div class="project-details__top">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="details-page-text-area blog-details-text-area">
-                        <img class="details-page-main-img" src="/storage/{{ $service->photo }}" alt="image">
-                        <span class="blog-date"><i class="flaticon-deadline"></i>
-                            Preço :{!! number_format($service->price, 2, ',', '.') . ' ' . 'KZ' !!}</span>
-                        <h3>{{ $service->name }}</h3>
-                        <p> {!! html_entity_decode($service->description) !!}
-                        </p>
+                <div class="col-xl-12">
+                    <div class="project-details__img-box">
+                        <img src="/storage/{{ $service->photo }}" alt="">
+                       
                     </div>
+                    <div class="project-details__content-one">
+                        <h3 class="project-details__content-one-title">{{ $service->name }}</h3>
+                        <p class="project-details__content-one-text">{!! html_entity_decode($service->description) !!}</p>
+                    </div>
+                 
                 </div>
-                <div class="col-lg-4">
-                    <div class="sidebar-area pt-30 pl-20">
+            </div>
+         
+          
+        </div>
+    </div>
+</section>
+<!--Project Details End-->
 
-                        <div class="sidebar-card sidebar-categories mt-30">
-                            <h3>Outros Serviços</h3>
-                            <ul>
-                                @foreach ($lasted as $item)
-                                    <li><a href="{!! url('/servicos/' . urlencode($item->name)) !!}"><span><i
-                                                    class="flaticon-double-chevron"></i>{!! mb_substr($item->name, 0, 48, 'UTF-8') !!}</span> </a>
-                                    </li>
-                                @endforeach
-                            </ul>
+<!--Similar project Start-->
+<section class="similar-project">
+    <div class="container">
+        <div class="section-title text-center">
+         
+            <h2 class="section-title__title">Serviços Relacionados</h2>
+        </div>
+        <div class="row">
+            @foreach ($lasted as $item)
+            <div class="col-xl-4 col-lg-4">
+                <!--Project Page Two Single-->
+                <div class="project-two__single">
+                    <div class="project-two__img">
+                        <img src="/storage/{{ $service->photo }}" alt="">
+                    </div>
+                    <div class="project-two__content">
+                        <p class="project-two__sub-title">{!! url('/servicos/' . urlencode($item->name)) !!}</p>
+                        <h3 class="project-two__title"><a href="{!! url('/servicos/' . urlencode($item->name)) !!}">{!! url('/servicos/' . urlencode($item->name)) !!}</a></h3>
+                        <div class="project-two__arrow">
+                            <a href="{!! url('/servicos/' . urlencode($item->name)) !!}"><i class="fa fa-long-arrow-alt-right"></i></a>
                         </div>
-                        <div class="sidebar-card sidebar-download mt-30">
-                            <h3>Solicitar Produto</h3>
-                            <p>Na Workaholic SA, nossa paixão é impulsionar o sucesso do seu negócio por meio de soluções
-                                tecnológicas de ponta. Simplificamos sua jornada para o topo, oferecendo qualidade e
-                                eficiência incomparáveis.
-
-                                Não perca mais tempo. Converse conosco agora para transformar sua empresa e alcançar o
-                                sucesso que você merece. Sua trajetória rumo ao êxito começa aqui! .</p>
-                                <a class="default-button whatsapp-button" href="https://api.whatsapp.com/send?phone=+244946359245">
-                                    <span><i class="fab fa-whatsapp"></i> Entre em contato pelo WhatsApp</span>
-                                  </a>
-                        </div>
-
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
+</section>
 
 @endsection

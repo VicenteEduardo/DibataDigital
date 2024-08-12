@@ -1,328 +1,334 @@
 @extends('layouts.merge.site')
-@section('titulo', 'Sobre Nós')
+@section('titulo', 'Notícias')
 @section('content')
+<!--Page Header Start-->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(/site/assets/images/backgrounds/page-header-bg.jpg)">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="{{ route('site.home') }}l">Home</a></li>
+                <li><span>/</span></li>
+                <li class="active">Sobre Nós</li>
+            </ul>
+            <h2>Sobre Nós</h2>
+        </div>
+    </div>
+</section>
+<!--Delivering IT Start-->
+<section class="delivering-it delivering-it-two">
+    <div class="container">
+        <div class="delivering-it__bottom">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                    <!--Delivering IT Single-->
+                    <div class="delivering-it__single">
+                        <div class="delivering-it__img">
+                            <img src="/site/assets/images/resources/delivering-it-img-1.jpg" alt="">
+                        </div>
+                        <div class="delivering-it__content">
+                            <h5 class="delivering-it__content-title">Perfect solution every business demands
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                    <!--Delivering IT Single-->
+                    <div class="delivering-it__single">
+                        <div class="delivering-it__img">
+                            <img src="/site/assets/images/resources/delivering-it-img-2.jpg" alt="">
+                        </div>
+                        <div class="delivering-it__content">
+                            <h5 class="delivering-it__content-title">Helping businesses around the world</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                    <!--Delivering IT Single-->
+                    <div class="delivering-it__single">
+                        <div class="delivering-it__img">
+                            <img src="/site/assets/images/resources/delivering-it-img-3.jpg" alt="">
+                        </div>
+                        <div class="delivering-it__content">
+                            <h5 class="delivering-it__content-title">What is holding back the IT solution.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Delivering IT End-->
 
-    <div class="uni-banner">
-        <div class="container-fluid container-large">
-            <div class="uni-banner-text-area">
-                <h1>
-                    Sobre nós</h1>
-                <ul>
-                    <li><a href="{{ route('site.home') }}">Home</a></li>
-                    <li>
-                        Sobre nós</li>
+<!--Brand One Start-->
+<section class="brand-one">
+    <div class="container">
+        <h4 class="brand-one__title">Os parceiros de negócios</h4>
+        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+            "0": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "375": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "575": {
+                "spaceBetween": 30,
+                "slidesPerView": 3
+            },
+            "767": {
+                "spaceBetween": 50,
+                "slidesPerView": 4
+            },
+            "991": {
+                "spaceBetween": 50,
+                "slidesPerView": 5
+            },
+            "1199": {
+                "spaceBetween": 100,
+                "slidesPerView": 5
+            }
+        }}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-1.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-2.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-3.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-4.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-5.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-1.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-2.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-3.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="/site/assets/images/brand/brand-1-4.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="assets/images/brand/brand-1-5.png" alt="">
+                </div><!-- /.swiper-slide -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Brand One End-->
+
+<!--Business From Start-->
+<section class="business-from">
+    <div class="business-from-bg-box">
+        <div class="business-from-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+            style="background-image: url(/site/assets/images/backgrounds/business-from-bg.jpg);"></div>
+    </div>
+    <div class="container">
+        <div class="business-from__inner text-center">
+            <p class="business-from__sub-title">Negócios de uma grande ideia para</p>
+            <h2 class="business-from__title">Lançamento</h2>
+            <div class="business-from__btn-box">
+                <a href="{{ route('site.contact') }}" class="business-from__btn thm-btn">Entre em contato conosco agora</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Business From End-->
+
+<!--Notech More Start-->
+<section class="notech-more">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="notech-more__left">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <span class="section-title__tagline">Fique protegido</span>
+                            <div class="section-title-shape">
+                                <img src="/site/assets/images/shapes/section-title-shape.png" alt="">
+                            </div>
+                        </div>
+                        <h2 class="section-title__title">A Dibata é mais do que uma empresa de tecnologia</h2>
+                    </div>
+                    <p class="notech-more__text">Na Dibata Digital, somos muito mais do que uma simples fornecedora de soluções tecnológicas. Nossa essência vai além da inovação e da excelência técnica; somos parceiros estratégicos dedicados a impulsionar o sucesso de nossos clientes. Combinamos expertise em tecnologia com uma profunda compreensão das necessidades de negócios, oferecendo soluções que transformam desafios em oportunidades reais.</p>
+                    <ul class="list-unstyled notech-more__points">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-technology"></span>
+                            </div>
+                            <h3 class="notech-more__title">Inovações de dados</h3>
+                            <p class="notech-more__text-2">Na era digital, transformar dados em insights valiosos é essencial para a vantagem competitiva. A Dibata Digital está na vanguarda das inovações de dados, oferecendo soluções tecnológicas que definem tendências de mercado.
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-stock-market"></span>
+                            </div>
+                            <h3 class="notech-more__title">Soluções de negócios</h3>
+                            <p class="notech-more__text-2">No cenário atual, a Dibata Digital fornece soluções de negócios inovadoras que transformam desafios em oportunidades e impulsionam o crescimento e a eficiência.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="notech-more__right">
+                    <div class="notech-more__img wow slideInRight" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+                        <img src="/site/assets/images/resources/notech-more-img-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Notech More End-->
+
+<!--Counter One Start-->
+<section class="counter-one about-page__counter">
+    <div class="counter-one__bg" style="background-image: url(/site/assets/images/backgrounds/funfact-bg-1-1.png);">
+    </div><!-- /.counter-one__bg -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <ul class="list-unstyled counter-one__list">
+                    <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
+                        <div class="counter-one__icon">
+                            <span class="icon-work"></span>
+                        </div>
+                        <h3 class="odometer" data-count="30">00</h3>
+                        <span class="counter-one__plus">+</span>
+                        <p class="counter-one__title">Anos de experiência</p>
+                        <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                    </li>
+                    <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
+                        <div class="counter-one__icon">
+                            <span class="icon-technical-support"></span>
+                        </div>
+                        <h3 class="odometer" data-count="2800">00</h3>
+                        <p class="counter-one__title">Problemas de TI resolvidos</p>
+                        <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                    </li>
+                    <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+                        <div class="counter-one__icon">
+                            <span class="icon-like"></span>
+                        </div>
+                        <h3 class="odometer" data-count="6960">00</h3>
+                        <p class="counter-one__title">Clientes satisfeitos</p>
+                        <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                    </li>
+                    <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+                        <div class="counter-one__icon">
+                            <span class="icon-user"></span>
+                        </div>
+                        <h3 class="odometer" data-count="29">00</h3>
+                        <span class="counter-one__plus">+</span>
+                        <p class="counter-one__title">Membros da equipe profissional</p>
+                        <p class="counter-one__text">Lorem ipsum is simply free text used by refring.</p>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
+</section>
+<!--Counter One End-->
 
-
-    <div class="about ptb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-text-area pr-20">
-                        <div class="default-section-title">
-                            <span>
-                                Sobre nós</span>
-                            <h3>
-                                Workaholic SA</h3>
-                            <p>Workaholic SA é nome comercial da empresa W. Suntec – Sistemas Automáticos uma
-                                empresa voltada ao ramo da tecnologia na área de telecomunicações e automação.
-                                Nos dias de hoje tratar dos meios de Tecnologia e informação da sua empresa é cuidar
-                                da produtividade do teu negocio, nos apresentamos como a referencia e indicação para que
-                                com segurança e eficiência, na manutenção de uma relação de confiança ajudemos a cuidar e
-                                contribui para a produtividade do seu negocio.</p>
-                            <p>Os principais seguimentos de venda da empresa além das redes retalhistas é o canal
-                                online.
-                                A workaholic tem apostado num plano de restruturação e expansão com
-                                O objectivo de melhorar a forma como chegar ao consumidor. .</p>
+<!--Team One Start-->
+<section class="team-one about-page-team">
+    <div class="container">
+        <div class="section-title text-center">
+            <div class="section-title__tagline-box">
+                <span class="section-title__tagline">Conheça a equipe</span>
+                <div class="section-title-shape">
+                    <img src="assets/images/shapes/section-title-shape.png" alt="">
+                </div>
+            </div>
+            <h2 class="section-title__title">Membros da equipe</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <!--Team One Single-->
+                <div class="team-one__single">
+                    <div class="team-one__img">
+                        <img src="assets/images/team/team-1-1.jpg" alt="">
+                        <ul class="list-unstyled team-one__social">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-one__content-box">
+                        <div class="team-one__content">
+                            <div class="team-one-shape">
+                                <img src="assets/images/shapes/team-one-shape.png" alt="">
+                            </div>
+                            <h4 class="team-one__name"><a href="team-details.html">Kevin martin</a></h4>
+                            <p class="team-one__title">Accountant</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="about-img-area">
-                        <img src="assets/images/about/about1.jpg" alt="image">
-                        <div class="about-img-text">
-                            <i class="flaticon-badge"></i>
-                            <h4>
-                                4 anos</h4>
-                            <p>
-                                de experiências</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                <!--Team One Single-->
+                <div class="team-one__single">
+                    <div class="team-one__img">
+                        <img src="assets/images/team/team-1-2.jpg" alt="">
+                        <ul class="list-unstyled team-one__social">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-one__content-box">
+                        <div class="team-one__content">
+                            <div class="team-one-shape">
+                                <img src="assets/images/shapes/team-one-shape.png" alt="">
+                            </div>
+                            <h4 class="team-one__name"><a href="team-details.html">Jessica brown</a></h4>
+                            <p class="team-one__title">Co founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                <!--Team One Single-->
+                <div class="team-one__single">
+                    <div class="team-one__img">
+                        <img src="assets/images/team/team-1-3.jpg" alt="">
+                        <ul class="list-unstyled team-one__social">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-one__content-box">
+                        <div class="team-one__content">
+                            <div class="team-one-shape">
+                                <img src="assets/images/shapes/team-one-shape.png" alt="">
+                            </div>
+                            <h4 class="team-one__name"><a href="team-details.html">David cooper</a></h4>
+                            <p class="team-one__title">Senior assistant</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="services ptb-100 bg-f9f9f9">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>
-                    Nossos serviços</span>
-                <h3>
-                    O que oferecemos aos nossos clientes</h3>
-
-            </div>
-            <div class="section-content">
-                <div class="row justify-content-center">
-                    @foreach ($services as $item)
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <div class="service-card">
-                                <div class="service-card-img">
-                                    <a href="{!! url('/servicos/' . urlencode($item->name)) !!}"><img src="/storage/{{ $item->photo }}"
-                                            alt="image"></a>
-                                </div>
-                                <div class="service-card-text-area">
-                                    <i class="flaticon-repairing-service main-icon"></i>
-                                    <h4><a href="{!! url('/servicos/' . urlencode($item->name)) !!}"> {{ $item->name }}</a></h4>
-
-                                    <a class="read-more-btn" href="{!! url('/servicos/' . urlencode($item->name)) !!}">Read More <i
-                                            class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
-                </div>
-                <div class="section-footer-button">
-                    <a class="default-button default-button-2 mt-30" href="{{ route('site.services') }}"><span>Todos
-                            Serviços <i class="flaticon-right-arrow"></i></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="working-process working-process-1 ptb-100">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>Nosso processo de reparo</span>
-                <h3>
-                    Quem somos e como trabalhamos</h3>
-                <p> superar com excelência as necessidades dos clientes, oferecendo um serviço de confiança,
-                    rigor, transparência e precisão de forma rápida e personalizada, assente em ferramenta e
-                    equipamentos certificados e actualizados com a evolução e a exigência do actual mercado.</p>
-            </div>
-            <div class="section-content">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="working-process-card">
-                            <h6>1 passo Diagnóstico</h6>
-                            <span class="dot"></span>
-                            <h4 Caminhe, entrego e pego</h4>
-                                <p>Realizar uma avaliação completa do equipamento ou sistema para identificar o problema
-                                    específico e suas causas.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="working-process-card">
-                            <h6>2 passo Reparo e Manutenção</h6>
-                            <span class="dot"></span>
-
-                            <p>Realizar as devidas correções, trocas de peças defeituosas, configurações ou ajustes
-                                necessários para restaurar o funcionamento adequado.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="working-process-card">
-                            <h6> 3 Teste e Verificação</h6>
-                            <span class="dot"></span>
-
-                            <p>Após o reparo, realizar testes para verificar o funcionamento adequado e configurar o
-                                equipamento ou sistema para garantir seu desempenho otimizado..</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="ff-intro ff-intro-1">
-        <div class="container">
-            <div class="intro-video-area ptb-100">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
-                        <div class="intro-video-text-area">
-                            <div class="default-section-title color-title">
-                                <h3>
-                                    Cuidado rápido e excelente para seus computadores</h3>
-                            </div>
-                            <a class="default-button mt-30" href="{{ route('site.produt') }}"><span>Nossos Produtos <i
-                                        class="flaticon-right-arrow"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 col-12">
-                        <div class="intro-video-play-area pt-30">
-                            <a class="video-popup" href="{{ $configuration->youtube }}">
-                                <i class="fas fa-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fun-fact-area">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="fun-fact-card">
-                            <i class="flaticon-success"></i>
-                            <h2><span class="odometer" data-count="125">00</span>+</h2>
-                            <p>Equipamentos Reparados</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="fun-fact-card">
-                            <i class="flaticon-experience"></i>
-                            <h2><span class="odometer" data-count="200">00</span>+</h2>
-                            <p>
-                                cliente feliz</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="fun-fact-card">
-                            <i class="flaticon-expert"></i>
-                            <h2><span class="odometer" data-count="{{ $agentesCount }}">00</span>+</h2>
-                            <p>
-                                Equipe Especialistas</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="team ptb-100">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>Especialistas em Reparos</span>
-                <h3>Conheça os membros da nossa equipe de especialistas</h3>
-
-            </div>
-            <div class="section-content">
-                <div class="row justify-content-center">
-                    @foreach ($agentes as $item)
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <div class="team-card">
-                                <div class="team-card-img">
-                                    <img src="/storage/{{ $item->foto }}" alt="image">
-                                </div>
-                                <div class="team-card-text">
-                                    <h4>{{ $item->name }}</h4>
-                                    <p>{{ $item->specification }}</p>
-                                    <div class="social-icons">
-                                        @if (1 == 0)
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/" target="_blank"><i
-                                                            class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="https://twitter.com/" target="_blank"><i
-                                                            class="fab fa-twitter"></i></a></li>
-                                                <li><a href="https://www.instagram.com/" target="_blank"><i
-                                                            class="fab fa-instagram"></i></a></li>
-                                                <li><a href="https://www.pinterest.com/" target="_blank"><i
-                                                            class="fab fa-pinterest-p"></i></a></li>
-                                            </ul>
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="testimonials ptb-100">
-        <div class="container">
-            <div class="default-section-title default-section-title-middle">
-                <span>
-                    Testemunhos</span>
-                <h3>
-                    O que nossos clientes dizem</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                    pulvinar dapibus leo.</p>
-            </div>
-            <div class="section-content">
-                <div class="testimonial-slider-area owl-carousel">
-                    <div class="testimonial-card">
-                        <p>‘’A Workaholic SA foi a minha salvação! Como empreendedor digital, meus computadores são minha
-                            principal ferramenta de trabalho. Quando enfrentei problemas com uma impressora crucial para
-                            minha produção, entrei em contato com a equipe da Workaholic. Eles foram rápidos, eficientes e
-                            resolveram o problema em um piscar de olhos. Agora, sei que posso contar com eles sempre que
-                            precisar!’’</p>
-                        <div class="testimonial-intro-area">
-                            <img src="/site/user.png" alt="image">
-                            <div class="testimonial-card-intro-text">
-                                <h6>João Santos</h6>
-                                <span>Empreendedor Digital</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>‘’Recomendo a Workaholic SA de olhos fechados! Como gerente de TI, tive o prazer de contar com
-                            seus serviços para a montagem de uma rede estruturada em nossa empresa. A equipe foi altamente
-                            profissional, configurou nossos servidores com maestria e corrigiu problemas existentes. Eles
-                            superaram nossas expectativas e agora somos mais produtivos do que nunca!’’</p>
-                        <div class="testimonial-intro-area">
-                            <img src="/site/user.png" alt="image">
-                            <div class="testimonial-card-intro-text">
-                                <h6>Ana Rodrigues</h6>
-                                <span>Gerente de TI</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <p>‘’A Workaholic SA é nossa parceira de confiança! Tenho uma loja e precisei instalar um sistema de
-                            CCTV para garantir a segurança do local. Os técnicos da Workaholic montaram e configuraram tudo
-                            sem causar transtornos. Agora, posso monitorar o estabelecimento remotamente e tenho total
-                            tranquilidade. Obrigado, Workaholic!.’’</p>
-                        <div class="testimonial-intro-area">
-                            <img src="/site/user.png" alt="image">
-                            <div class="testimonial-card-intro-text">
-                                <h6>Lucas Ferreira</h6>
-                                <span>Proprietário de Loja</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>‘’A Workaholic SA é a melhor escolha para soluções de telecomunicações! Como diretora
-                            administrativa, precisávamos de uma central telefônica moderna e eficiente. Eles montaram e
-                            configuraram a central VOIP e nos forneceram soluções de vídeo e áudio conferências. Nosso setor
-                            de comunicação nunca esteve tão eficiente e produtivo!.’’</p>
-                        <div class="testimonial-intro-area">
-                            <img src="/site/user.png" alt="image">
-                            <div class="testimonial-card-intro-text">
-                                <h6>Juliana Almeida</h6>
-                                <span>Diretora Administrativa</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>‘’A Workaholic SA foi nossa resposta para o controle de ponto biométrico! Como coordenador de
-                            recursos humanos, busquei uma solução para otimizar o registro de ponto dos funcionários. Eles
-                            montaram e configuraram o controle biométrico em nossa empresa, proporcionando mais precisão e
-                            agilidade. Estamos muito satisfeitos com o resultado!.’’</p>
-                        <div class="testimonial-intro-area">
-                            <img src="/site/user.png" alt="image">
-                            <div class="testimonial-card-intro-text">
-                                <h6>Pedro Lima</h6>
-                                <span>Coordenador de Recursos Humanos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</section>
+<!--Team One End-->
 
 
 @endsection

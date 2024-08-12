@@ -18,10 +18,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
-        $response['news'] = News::where([['state', 'Autorizada']])->orderBy('id', 'desc')->paginate(6);
-        $response['lasted'] = News::where([['state', 'Autorizada']])->orderBy('id', 'asc')->paginate(6);
-        return view('site.news.all.index', $response);
+      
+        return view('site.news.all.index', );
     }
 
 
